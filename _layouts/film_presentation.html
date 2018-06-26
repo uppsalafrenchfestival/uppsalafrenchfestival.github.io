@@ -1,0 +1,53 @@
+---
+layout: film_presentation
+---
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include header.html %}
+	    <!-- Slider Start -->
+	<section id="global-header">
+	    <div class="container">
+		<div class="row">
+		    <div class="col-md-12">
+		        <div class="block">
+		            <h1> Program  </h1>
+		        </div>
+		    </div>
+		</div>
+	    </div>
+	</section>
+
+	<section id="intro">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-md-7 col-sm-12">
+		<div class="block">
+		  <div class="section-title">
+		  
+		    <h2> {{ page.film }}  </h2>
+		    <h3> Par {{ page.real }} </h3>
+		   </div>
+		   <p> {{ content }}</p>
+		<br /> 
+		<br /> 
+		<iframe width="560" height="315" src="{{page.trailer}}" \
+			 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		
+		</div>
+	      </div><!-- .col-md-7 close -->
+	      <div class="col-md-5 col-sm-12">
+		<div class="block">
+		  <img src="{{ site.baseurl }}/img/films/{{page.img}}" alt="Image of the {{page.title}}">
+		</div>
+	      </div><!-- .col-md-5 close -->
+	    </div>
+	  </div>
+	</section>
+    {% include footer.html %}
+    </body>
+</html>
+
