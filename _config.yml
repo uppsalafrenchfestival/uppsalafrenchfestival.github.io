@@ -16,7 +16,7 @@ keep_files:
 # Site settings
 title: Uppsala French Movies Festival
 url: "http://uppsalafrenchfestival.github.io" # the base hostname & protocol for your site
-baseurl: "http://uppsalafrenchfestival.github.io"
+#baseurl: "/"
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
 
