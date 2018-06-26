@@ -39,8 +39,8 @@
 }
 #navigation #navbar .navbar-nav li a:hover,
 #navigation #navbar .navbar-nav li a:focus {
-    color: #ffffff !important;
-    border-bottom: 2px solid #ffffff !important;
+    color: #ffffff ;
+    border-bottom: 2px solid #ffffff;
 }
 #navigation #navbar .navbar-nav .active a {
     color: #ffffff !important;
