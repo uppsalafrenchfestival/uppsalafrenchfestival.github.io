@@ -7,8 +7,10 @@
       url: /program
     - title: Programmation
       url: /program
-    - title: Film1
-      url: /film/film1
+    - title: La sociologue et l'ourson
+      url: /film/sociologue
+    - title: Pas son genre
+      url: /film/passongenre
 - title: About us
   url: /
   sublink: 

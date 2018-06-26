@@ -4,7 +4,7 @@ img: film1.jpeg
 trailer: "https://www.youtube.com/embed/RoNpMemCWvM"
 film: "La sociologue et l'ourson"
 real: "Etienne Chaillou et Mathias Thery"
-permalink: /film/film1
+permalink: /film/sociologue
 lang: fr
 ---
 

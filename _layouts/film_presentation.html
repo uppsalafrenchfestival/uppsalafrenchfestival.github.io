@@ -29,11 +29,12 @@ layout: film_presentation
 		  <div class="section-title">
 		  
 		    <h2> {{ page.film }}  </h2>
-		    <h3> Par {{ page.real }} </h3>
+		    <h3> Par <a href="{{ site.baseurl }}/real/{{ page.real-link}}"> {{ page.real }} </a> </h3>
 		   </div>
 		   <p> {{ content }}</p>
 		<br /> 
 		<br /> 
+		<h3> Trailer: </h3>
 		<iframe width="560" height="315" src="{{page.trailer}}" \
 			 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		
