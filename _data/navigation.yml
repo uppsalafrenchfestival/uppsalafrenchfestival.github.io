@@ -1,32 +1,97 @@
-- title: Home
-  url: /
-- title: Program
-  url: /program
-  sublinks:
-    - title: Selection
-      url: /program
-    - title: Programmation
-      url: /program
-    - title: La sociologue et l'ourson
-      url: /film/sociologue
-    - title: Pas son genre
-      url: /film/passongenre
-- title: About us
-  url: /
-  sublink: 
-    - title: About the Festival
-      url: /program
-    - title: About the association
-      url: /program
-    - title: Team 
-      url: /program
-- title: Get Involved
-  url: /contact
-  sublinks:
-    - title: Become a volunteer
-      url: /volunteering 
-    - title: Our Partners
-      url: /partners
-- title: Contact
-  url: /contact
-
+menu: 
+    en:
+        - title: Home
+          url: /
+        - title: Program
+          url: /program
+          sublinks:
+            - title: Movie Selection
+              url: /program
+            - title: Programmation
+              url: /program
+            - title: La sociologue et l'ourson
+              url: /film/sociologue
+            - title: Pas son genre
+              url: /film/passongenre
+        - title: About us
+          url: /
+          sublinks: 
+            - title: About the Festival
+              url: /program
+            - title: About the association
+              url: /program
+            - title: Team 
+              url: /program
+        - title: Get Involved
+          url: /contact
+          sublinks:
+            - title: Become a volunteer
+              url: /volunteering 
+            - title: Our Partners
+              url: /partners
+        - title: Contact
+          url: /contact
+    fr:
+        - title: Accueil
+          url: /
+        - title: Programme
+          url: /program
+          sublinks:
+            - title: Selection de Film
+              url: /program
+            - title: Programmation
+              url: /program
+            - title: La sociologue et l'ourson
+              url: /film/sociologue
+            - title: Pas son genre
+              url: /film/passongenre
+        - title: L'association
+          url: /
+          sublinks: 
+            - title: A propos du Festival
+              url: /program
+            - title: A propos de l'association
+              url: /program
+            - title: L'équipe 
+              url: /program
+        - title: Rejoignez nous 
+          url: /contact
+          sublinks:
+            - title: Devenez bénévole
+              url: /volunteering 
+            - title: Nos partenaires
+              url: /partners
+        - title: Nous contacter
+          url: /contact
+    sv:
+        - title: Hem
+          url: /
+        - title: Program
+          url: /program
+          sublinks:
+            - title: Movie Selection
+              url: /program
+            - title: Programmering
+              url: /program
+            - title: La sociologue et l'ourson
+              url: /film/sociologue
+            - title: Pas son genre
+              url: /film/passongenre
+        - title: Om oss
+          url: /
+          sublinks: 
+            - title: Om festivalen
+              url: /program
+            - title: Om föreningen
+              url: /program
+            - title: Team
+              url: /program
+        - title: Medverka 
+          url: /contact
+          sublinks:
+            - title: Bli Volontär
+              url: /volunteering 
+            - title: Nos partenaires
+              url: /partners
+        - title: Kontakt
+          url: /contact

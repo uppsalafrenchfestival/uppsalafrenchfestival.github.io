@@ -18,10 +18,9 @@
               <img src="{{ site.baseurl }}/img/logo1.png" alt="Logo">
             </a>
           </div>
-
 		<nav id="navbar" class="collapse navbar-collapse">
 		    <ul class="nav navbar-nav">
-			{% assign links = site.data.navigation %}
+			{% assign links = site.data.navigation.menu[page.lang] %}
 			{% for link in links %}
 			    {% assign class = nil %}
 			    {% if page.url contains link.url %}
@@ -29,14 +28,23 @@
 			    {% endif %}
 			    {% if link.sublinks %}
 				<li class="dropdown {{ class }}">
+				    
+		            {% if page.lang == 'en' %}
 				    <a href="{{ site.baseurl }}{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
+				    {% else %}
+				    <a href="{{ site.baseurl }}/{{ page.lang }}{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>				    
+				    {% endif %}
 				    <ul class="dropdown-menu">
 				        {% for sublink in link.sublinks %}
 				            {% if sublink.title == 'separator' %}
 				                <li role="separator" class="divider"></li>
 				            {% else %}
 				                <li>
-				                    <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+                		            {% if page.lang == 'en' %}
+    				                    <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+				                    {% else %}
+				                        <a href="{{ site.baseurl }}/{{ page.lang }}{{ sublink.url }}">{{ sublink.title }}</a>
+				                    {% endif %}
 				                </li>
 				            {% endif %}
 				        {% endfor %}
@@ -50,6 +58,12 @@
 			{% endfor %}
 				<li class="{{ class }}"> <a href="https://www.facebook.com/uppsalafranskafilmfestival/" target="_blank">Facebook </a></li>
  		    </ul>
+
+			{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+			{% for page in pages %}
+				<a href="{{ page.url }}" class="{{ page.lang }}"> <img src="/img/{{ page.lang }}.png" alt="{{ page.lang }}" height="30" width="30"> </a>
+			{% endfor %}
+
 		</nav>
 
 
