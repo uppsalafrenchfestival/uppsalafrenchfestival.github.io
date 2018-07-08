@@ -1,9 +1,3 @@
-/*
- * This css file includes styles added in the jekyll port of this theme.
- * To find the original style.css that ships with Airspace, read airspace.css
- *
- */
-
  .italic {
    font-style: italic;
  }
@@ -11,24 +5,39 @@
  .bold {
    font-weight: bold;
  }
-
+ 
  .center-text {
    text-align: center;
  }
-
-.post-area {
-  padding: 40px;
-  width: 100%;
-  min-height: 150px;
-  background-color: white;
-  border-bottom: 1px dotted #ddd;
+ 
+ 
+#film-presentation a
+{
+    text-decoration: underline
 }
 
-.post-area a:link, .post-area a:visited {
-  font-size: 30px;
-  color: #333;
+
+#film-presentation .name
+{
+    color: #7B7B7B;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.post-area a:hover {
-  color: #0D0017;
+#film-presentation .textfilm
+{
+    font-size: 15px;
+}
+
+#film-presentation .info
+{
+    color: #7B7B7B;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+#film-presentation .resumefilm
+{
+    color: #000000;
 }

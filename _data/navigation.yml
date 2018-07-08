@@ -9,10 +9,12 @@ menu:
               url: /program
             - title: Programmation
               url: /program
+            - title: Tickets
+              url: /tickets      
             - title: La sociologue et l'ourson
-              url: /film/sociologue
-            - title: Pas son genre
-              url: /film/passongenre
+              url: /film/en/sociologue
+            - title: Vandal
+              url: /film/en/vandal
         - title: About us
           url: /
           sublinks: 
@@ -42,9 +44,9 @@ menu:
             - title: Programmation
               url: /program
             - title: La sociologue et l'ourson
-              url: /film/sociologue
+              url: /film/fr/sociologue
             - title: Pas son genre
-              url: /film/passongenre
+              url: /film/fr/passongenre
         - title: L'association
           url: /
           sublinks: 
@@ -74,9 +76,9 @@ menu:
             - title: Programmering
               url: /program
             - title: La sociologue et l'ourson
-              url: /film/sociologue
+              url: /film/sv/sociologue
             - title: Pas son genre
-              url: /film/passongenre
+              url: /film/sv/passongenre
         - title: Om oss
           url: /
           sublinks: 
@@ -95,3 +97,27 @@ menu:
               url: /partners
         - title: Kontakt
           url: /contact
+          
+film_presentation:
+    en:
+         director: Director
+         actors: Actors
+         date: Date
+         venue: Venue
+         trailer: Trailer
+         time: Time
+    fr:
+         director: Realisateur
+         actors: Acteurs
+         date: Date
+         venue: Lieu
+         trailer: Bande-annonce
+         time: Heure
+    sv:
+         director: Regissören
+         actors: Rollerna
+         date: Datum
+         venue: Plats
+         trailer: Trailer
+         time: Tid
+

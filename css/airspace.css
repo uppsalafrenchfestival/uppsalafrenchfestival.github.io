@@ -163,6 +163,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	service Start
 --*/
 #service {
+  margin: auto;
   text-align: center;
   padding: 90px 0;
 }
@@ -660,7 +661,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #contact-form .block form .form-group .form-control {
   background: #F6F8FA;
   height: 60px;
-  border: 1px solid #EEF2F6;
+  border: 1px solid #4d4d4d;
   box-shadow: none;
   width: 100%;
 }
@@ -725,6 +726,15 @@ font header .navbar-default .navbar-nav li a:hover {
 #contact-box .block img {
   width: 100%;
 }
+
+#contact-box legend {
+    color: #ff0000;
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+  border: 1px solid #4d4d4d;
+}
+
 #contact-box .block h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;

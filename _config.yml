@@ -18,6 +18,7 @@ url: "http://uppsalafrenchfestival.github.io" # the base hostname & protocol for
 #baseurl: "/"
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
+#destination: /var/www/html/
 
 # Build settings
 markdown: kramdown

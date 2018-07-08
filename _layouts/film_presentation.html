@@ -22,32 +22,56 @@ layout: film_presentation
 	</section>
 
 	<section id="intro">
-	  <div class="container">
+	  <div class="container" id="film-presentation">
 	    <div class="row">
 	      <div class="col-md-7 col-sm-12">
 		<div class="block">
 		  <div class="section-title">
 		  
-		    <h2> {{ page.film }}  </h2>
-		    <h3> Par <a href="{{ site.baseurl }}/real/{{ page.real-link}}"> {{ page.real }} </a> </h3>
+  			{% assign names = site.data.navigation.film_presentation[page.lang] %}
+		    <h2> {{ page.film }}  </h2> <br/>
+		    <span class="name"> {{ names["director"] }}: </span> <span class="textfilm"> <a href="{{ site.baseurl }}/real/{{ page.real-link}}"> {{ page.real }} </a> </span> <br/>
+		    <span class="name"> {{ names["actors"] }}: </span> <span class="textfilm"> {{ page.actors }} </span> <br/>
+		    <span class="textfilm"> {{ page.length }} | {{ page.year}} </span> <br/>
 		   </div>
-		   <p> {{ content }}</p>
+		   <div>
+    		<br /> 
+		   {{ content }}
+            
+            </div>
 		<br /> 
-		<br /> 
-		<h3> Trailer: </h3>
-		<iframe width="560" height="315" src="{{page.trailer}}" \
+		<span class="name"> {{ names["trailer"] }}: </span> <br/><br/>
+ 		<iframe width="560" height="315" src="{{page.trailer}}" \
 			 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		
 		</div>
+		
 	      </div><!-- .col-md-7 close -->
 	      <div class="col-md-5 col-sm-12">
-		<div class="block">
-		  <img src="{{ site.baseurl }}/img/films/{{page.img}}" alt="Image of the {{page.title}}">
-		</div>
+	    	<div class="block">
+	    	  <img src="{{ site.baseurl }}/img/films/{{page.img}}" alt="Image of the {{page.title}}">
+    		  <span class="info"> {{ names["date"] }}: </span> <span class="textfilm"> {{ page.date }} </span> <br/>
+	  	      <span class="info"> {{ names["time"] }}: </span> <span class="textfilm"> {{ page.time }} </span> <br/>
+	  	      <span class="info"> {{ names["venue"] }}: </span> <span class="textfilm"> SlottBiografen </span>
+                
+	    	</div>
 	      </div><!-- .col-md-5 close -->
+	      
 	    </div>
 	  </div>
 	</section>
+
+    <section id="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     {% include footer.html %}
     </body>
 </html>

@@ -1,12 +1,20 @@
 ---
 layout: film_presentation
-img: film1.jpeg
+img: sociologue.jpeg
 trailer: "https://www.youtube.com/embed/RoNpMemCWvM"
 film: "La sociologue et l'ourson"
+actors: "Irène Théry, Mathias Théry, Frigide Barjot"
 real: "Etienne Chaillou et Mathias Thery"
 permalink: /film/fr/sociologue
+year: 2016
+length: 1h18min
+date: 25/11/2018
+time: 15h
 lang: fr
 ref: sociologue
 ---
 
-Décrivant le parcours législatif du mariage pour tous et le débat public houleux, entre septembre 2012 et sa mise en oeuvre en mai 2013, pendant neuf mois, en se basant sur des images et des sons d'actualité et en reconstituant certaines scènes à l'aide de peluches, de marionnettes ou de décors en carton, le film tourne aussi sur la relation entre Irène Théry, sociologue spécialiste de la famille, et son fils, un des deux réalisateurs.
+
+<span class="name"> Synopsis:</span> <br/>
+<span class="resumefilm"> De septembre 2012 à mai 2013, la France s'enflamme sur le projet de loi du Mariage pour tous. Pendant ces neuf mois de gestation législative, Ia sociologue Irène Théry raconte à son fils les enjeux du débat. De ces récits nait un cinéma d’ours en peluches, de jouets, de bouts de cartons. </span>
+

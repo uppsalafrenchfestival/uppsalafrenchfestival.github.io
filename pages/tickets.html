@@ -1,0 +1,178 @@
+---
+layout: page
+title: Uppsala French FilmFestival 
+permalink: /tickets
+ref: tickets
+lang: en
+---
+
+{% raw %} 
+<?php
+    // define variables and set to empty values
+    $nameErr = $emailErr = $genderErr = $websiteErr = "";
+    $name = $email = $gender = $comment = $website = "";
+
+    $isSubmitted = FALSE;
+    $isError = FALSE;
+
+    function test_input($data) {
+      $data = trim($data);
+      $data = stripslashes($data);
+      $data = htmlspecialchars($data);
+      return $data;
+    }  
+     
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        isSubmitted = TRUE;
+        
+        if (empty($_POST["name"])) {
+            $error = "Name is required";
+            $isError = TRUE;
+        } else {
+            $name = test_input($_POST["name"]);
+        }
+
+        if (empty($_POST["email"]) && !$isError) {
+            $error = "Email is required";
+            $isError = TRUE;
+        } else {
+        $email = test_input($_POST["email"]);
+            // check if e-mail address is well-formed
+            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                $error = "Invalid email format";
+                $isError = TRUE;
+            }
+        }
+
+        if (empty($_POST["address"]) && !$isError) {
+            $comment = "";
+        } else {
+            $comment = test_input($_POST["comment"]);
+        }
+    }
+?> 
+{% endraw %}
+
+
+
+<!-- Slider Start -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1> Tickets </h1>
+          <p> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--<form action="/charge" method="post" id="payment-form">-->
+<!--  <div class="form-row">-->
+<!--    <label for="card-element">-->
+<!--      Credit or debit card-->
+<!--    </label>-->
+<!--    <div id="card-element">-->
+<!--      <!-- A Stripe Element will be inserted here. -->
+<!--    </div>-->
+
+<!--    <!-- Used to display Element errors. -->
+<!--    <div id="card-errors" role="alert"></div>-->
+<!--  </div>-->
+
+<!--  <button>Submit Payment</button>-->
+<!--</form>-->
+
+
+<!-- contact form start -->
+<section id="contact-form">
+  <div class="container">
+    <div class="row">
+    
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+            <h1> Tickets </h1>
+            <p> Festival Pass: Give access to all the movies and the opening ceremony : 350kr </p>
+            <p> Regular Prices:  80kr for one film, 200kr for 3 films</p>
+            <p> Student Prices(*):  70kr for one film, 180kr for 3 films</p>
+            <p> Opening Ceremony: 120kr </p>
+            <p> *: Justification will be asked </p>
+             
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+            <form action="tickets.html" method="POST">
+              <fieldset>
+                <legend> Buying your tickets</legend>
+    
+            <div class="form-group">            
+            Billet Type: <SELECT id="ticket_type" onChange="updateCheckoutValue()" >
+                <option value="price:none"> ------  
+                <option value="price:festival-pass"> Festival Pass 
+                <option value="price:1ticket"> 1 ticket 
+                <option value="price:3tickets"> 3 tickets 
+            </select>
+            </div>
+            <div class="form-group">            
+                Student Price: <input type="checkbox" onClick="updateCheckoutValue()" id="student_price"> 
+            </div>       
+            <div class="form-group">            
+                <input type="text" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="email" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="address" placeholder="Address">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="zipcode" placeholder="Postal Code">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="city" placeholder="City">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default" type="submit" id="checkout_button" >Checkout: 0kr</button>
+            </div>
+            </fieldset>
+            </form>
+
+{% raw %}
+      <?php
+            echo "Var = " . $_SERVER["REQUEST_METHOD"];
+            if($isError) {
+                echo "<div class='form-group'>";            
+                echo "<p color=\"red\"> " . $error . "</p>";
+                echo "</div>";
+            }
+           ?> 
+{% endraw %}
+          </div>
+      </div>
+ 
+ 
+<!--   <div class="form-row">-->
+<!--    <label for="card-element">-->
+<!--      Credit or debit card-->
+<!--    </label>-->
+<!--    <div id="card-element">-->
+<!--      <!-- A Stripe Element will be inserted here. -->
+<!--    </div>-->
+
+<!--    <!-- Used to display form errors. -->
+<!--    <div id="card-errors" role="alert"></div>-->
+<!--  </div>-->
+
+<!--  <button>Submit Payment</button>-->
+<!--</form>-->
+
+
+    </div>
+  </div>
+</section>
+
