@@ -8,8 +8,7 @@ actors: " Jennifer Drakek,Jean Topart, Jean Valmont"
 permalink: /film/sv/planetesauvage
 year: 1973
 length: 1h12min
-date: 25/11/2018
-time: 13h
+date: 2018-11-25T13:00Z
 lang: sv
 ref: planetesauvage
 ---

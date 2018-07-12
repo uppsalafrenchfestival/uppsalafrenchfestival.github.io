@@ -8,8 +8,7 @@ actors: "Irène Théry, Mathias Théry, Frigide Barjot"
 permalink: /film/sv/sociologue
 year: 2016
 length: 1h18min
-date: 25/11/2018
-time: 15h
+date: 2018-11-25T15:00Z
 lang: sv
 ref: sociologue
 ---

@@ -9,8 +9,7 @@ lang: sv
 actors:  Fanny Ardant, Charles Berling, Jean Rochefort
 year: 1995
 length: 1h37min
-date: 23/11/2018
-time: 15h
+date: 2018-11-23T15:00Z
 ref: ridicule
 ---
 

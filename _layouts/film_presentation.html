@@ -49,8 +49,8 @@ layout: film_presentation
 	      <div class="col-md-5 col-sm-12">
 	    	<div class="block">
 	    	  <img src="{{ site.baseurl }}/img/films/{{page.img}}" alt="Image of the {{page.title}}">
-    		  <span class="info"> {{ names["date"] }}: </span> <span class="textfilm"> {{ page.date }} </span> <br/>
-	  	      <span class="info"> {{ names["time"] }}: </span> <span class="textfilm"> {{ page.time }} </span> <br/>
+    		  <span class="info"> {{ names["date"] }}: </span> <span class="textfilm"> {{ page.date | date_to_long_string }} </span> <br/>
+	  	      <span class="info"> {{ names["time"] }}: </span> <span class="textfilm"> {{ page.date | date: "%HH%M"}} </span> <br/>
 	  	      <span class="info"> {{ names["venue"] }}: </span> <span class="textfilm"> SlottBiografen </span>
                 
 	    	</div>

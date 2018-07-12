@@ -8,8 +8,7 @@ actors: "Virginie Efira, Melvil Poupaud, Vincent Lacoste"
 permalink: /film/en/victoria
 year: 2016
 length: 1h36min
-date: 22/11/2018
-time: 18h15
+date: 2018-11-22T18:15Z
 lang: en
 ref: victoria
 ---

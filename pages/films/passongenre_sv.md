@@ -10,8 +10,7 @@ lang: sv
 actors: Émilie Dequenne, Loïc Corbery, Sandra Nkaké
 year: 2013
 length: 1h52min
-date: 23/11/2018
-time: 17h15
+date: 2018-11-23T17:15Z
 ref: passongenre
 ---
 

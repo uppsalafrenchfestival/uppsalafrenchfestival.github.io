@@ -5,12 +5,11 @@ trailer: "https://www.youtube.com/embed/RN0GejCJB2M"
 film: "Corporate"
 real: "Nicolas Silhol"
 actors: "Céline Sallette, Lambert Wilson, Stéphane De Groodt"
-permalink: /film/en/corporate
+permalink: /film/sv/corporate
 year: 2017
 length: 1h35min
-date: 24/11/2018
-time: 18h15
-lang: en
+date: 2018-11-24T18:15Z
+lang: sv
 ref: corporate
 ---
 

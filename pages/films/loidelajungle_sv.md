@@ -7,8 +7,7 @@ real: " Antonin Peretjatko"
 length: 1h49min
 actors: Vincent Macaigne, Vimala Pons, Pascal Légitimus
 year: 2016
-date: 23/11/2018
-time: 20h30
+date: 2018-11-23T20:30Z
 permalink: /film/sv/loidelajungle
 lang: sv
 ref: loidelajungle

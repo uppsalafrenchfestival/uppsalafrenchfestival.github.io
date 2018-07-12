@@ -56,15 +56,15 @@
 				</li>
 			    {% endif %}
 			{% endfor %}
-				<li class="{{ class }}"> <a href="https://www.facebook.com/uppsalafranskafilmfestival/" target="_blank">Facebook </a></li>
+				<li class="active"> <a href="https://www.facebook.com/uppsalafranskafilmfestival/" target="_blank">Facebook </a></li>
+
  		    </ul>
-
-			{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-			{% for page in pages %}
-				<a href="{{ page.url }}" class="{{ page.lang }}"> <img src="/img/{{ page.lang }}.png" alt="{{ page.lang }}" height="30" width="30"> </a>
-			{% endfor %}
-
-		</nav>
+	            {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+	            {% for page in pages %}
+		            <a href="{{ page.url }}" class="{{ page.lang }}"> <img src="/img/{{ page.lang }}.png" alt="{{ page.lang }}" height="30" width="30"> </a>
+                {% endfor %}
+                
+         </nav>
 
 
 

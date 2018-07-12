@@ -19,6 +19,20 @@
     margin-right: 1rem;
     width: 250px;
 }
+
+
+#navigation .navbar-brand1 {
+    padding-right: 28px;
+    width: 280px;
+    color: #5fcf80 !important;
+}
+#navigation .navbar-brand1 {
+    float: left;
+    margin-top: -10px;
+    margin-right: 1rem;
+    width: 50px;
+}
+
 #navigation #navbar {
     float: right !important;
     margin-right: -15px;

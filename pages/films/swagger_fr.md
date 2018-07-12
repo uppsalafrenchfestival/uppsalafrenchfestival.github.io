@@ -7,8 +7,8 @@ real: "Olivier Babinet"
 length: "1h24min"
 actors: Abou Fofana, Aïssatou Dia, Nazario Giordano
 year: 2016
-date: 22/11/2018
-time: 12h30
+date: 2018-11-22T12:30Z
+filter: scolaire
 permalink: /film/fr/swagger
 lang: fr
 ref: swagger

@@ -8,8 +8,7 @@ real: "Olivier Peyron"
 permalink: /film/fr/unevieailleurs
 year: 2016
 length: 1h36min
-date: 22/11/2018
-time: 21h
+date: 2018-11-22T21:00Z
 lang: fr
 ref: unevieailleurs
 ---

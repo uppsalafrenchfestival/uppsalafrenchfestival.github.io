@@ -9,8 +9,7 @@ lang: fr
 actors: ""
 year: 2014
 length: 1h46min
-date: 24/11/2018
-time: 15h15
+date: 2018-11-24T15:15Z
 ref: regledujeu
 ---
 
