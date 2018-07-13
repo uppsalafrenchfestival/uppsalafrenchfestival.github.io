@@ -33,14 +33,10 @@ menu:
         - title: Programme
           url: /program
           sublinks:
-            - title: Selection de Film
-              url: /program
             - title: Programmation
               url: /program
-            - title: La sociologue et l'ourson
-              url: /film/fr/sociologue
-            - title: Pas son genre
-              url: /film/fr/passongenre
+            - title: Tickets
+              url: /tickets      
         - title: L'association
           url: /
           sublinks: 
@@ -65,14 +61,10 @@ menu:
         - title: Program
           url: /program
           sublinks:
-            - title: Movie Selection
-              url: /program
             - title: Programmering
               url: /program
-            - title: La sociologue et l'ourson
-              url: /film/sv/sociologue
-            - title: Pas son genre
-              url: /film/sv/passongenre
+            - title: Tickets
+              url: /tickets      
         - title: Om oss
           url: /
           sublinks: 
@@ -114,4 +106,12 @@ film_presentation:
          venue: Plats
          trailer: Trailer
          time: Tid
+
+tickets:
+    en:
+         pass: "Festival Pass Give access to all the movies and the opening ceremony 350kr"
+    fr:
+         pass: "Le pass du festival donne accès à tout les films et la cérémonie d'ouverture 350kr"
+    sv: 
+         pass: "Festival Pass Give access to all the movies and the opening ceremony 350kr"
 
