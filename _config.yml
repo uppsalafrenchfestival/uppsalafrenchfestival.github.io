@@ -14,8 +14,8 @@ keep_files:
 
 # Site settings
 title: Uppsala French Movies Festival
-#url: "http://uppsalafrenchfestival.github.io"
-url: "http://127.0.0.1:4000"
+url: "http://uppsalafrenchfestival.github.io"
+#url: "http://127.0.0.1:4000"
 
 #baseurl: "/"
 cover: "/assets/cover.png"
