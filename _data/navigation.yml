@@ -14,8 +14,6 @@ menu:
           sublinks: 
             - title: About the Festival
               url: /festival
-            - title: About the association
-              url: /program
             - title: Team 
               url: /team
         - title: Get Involved
@@ -42,8 +40,6 @@ menu:
           sublinks: 
             - title: A propos du Festival
               url: /festival
-            - title: A propos de l'association
-              url: /program
             - title: L'équipe 
               url: /team
         - title: Rejoignez nous 
@@ -70,8 +66,6 @@ menu:
           sublinks: 
             - title: Om festivalen
               url: /festival
-            - title: Om föreningen
-              url: /program
             - title: Team
               url: /team
         - title: Medverka 
