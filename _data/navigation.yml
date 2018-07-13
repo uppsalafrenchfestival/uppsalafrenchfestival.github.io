@@ -13,11 +13,11 @@ menu:
           url: /
           sublinks: 
             - title: About the Festival
-              url: /program
+              url: /festival
             - title: About the association
               url: /program
             - title: Team 
-              url: /program
+              url: /team
         - title: Get Involved
           url: /contact
           sublinks:
@@ -41,11 +41,11 @@ menu:
           url: /
           sublinks: 
             - title: A propos du Festival
-              url: /program
+              url: /festival
             - title: A propos de l'association
               url: /program
             - title: L'équipe 
-              url: /program
+              url: /team
         - title: Rejoignez nous 
           url: /contact
           sublinks:
@@ -69,11 +69,11 @@ menu:
           url: /
           sublinks: 
             - title: Om festivalen
-              url: /program
+              url: /festival
             - title: Om föreningen
               url: /program
             - title: Team
-              url: /program
+              url: /team
         - title: Medverka 
           url: /contact
           sublinks:
