@@ -23,24 +23,21 @@
 			{% assign links = site.data.navigation.menu[page.lang] %}
 			{% for link in links %}
 			    {% assign class = nil %}
-			    {% if page.url contains link.url %}
-				{% assign class = 'active' %}
-			    {% endif %}
 			    {% if link.sublinks %}
 				<li class="dropdown {{ class }}">
 				    
 		            {% if page.lang == 'en' %}
 				    <a href="{{ site.baseurl }}{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
-				    {% else %}
+			    {% else %}
 				    <a href="{{ site.baseurl }}/{{ page.lang }}{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>				    
-				    {% endif %}
+			    {% endif %}
 				    <ul class="dropdown-menu">
 				        {% for sublink in link.sublinks %}
 				            {% if sublink.title == 'separator' %}
 				                <li role="separator" class="divider"></li>
 				            {% else %}
 				                <li>
-                		            {% if page.lang == 'en' %}
+                		    	        {% if page.lang == 'en' %}
     				                    <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
 				                    {% else %}
 				                        <a href="{{ site.baseurl }}/{{ page.lang }}{{ sublink.url }}">{{ sublink.title }}</a>
@@ -56,17 +53,30 @@
 				</li>
 			    {% endif %}
 			{% endfor %}
-				<li class="active"> <a href="https://www.facebook.com/uppsalafranskafilmfestival/" target="_blank">Facebook </a></li>
+				<li class=nil> <a href="https://www.facebook.com/uppsalafranskafilmfestival/" target="_blank">Facebook </a></li>
 
+			<li class="dropdown {{ class }}">
+
+  					 <a href="{{ page.url }}" class="dropdown-toggle" data-toggle="dropdown" \
+  					 	role="button" aria-haspopup="true" aria-expanded="false">
+  					 	<img src="/img/{{ page.lang }}.png" alt="{{ page.lang }}" height="30" width="30">
+  					 	<span class="caret"></span></a>
+  					 
+				<ul class="dropdown-menu">
+	     			       {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+	        	   		 {% for page in pages %}
+  					<li>  <a href="{{ page.url }}" class="{{ page.lang }}">
+  						 <img src="/img/{{ page.lang }}.png" alt="{{ page.lang }}" height="30" width="30"> </a>
+          				</li>
+              				  {% endfor %}
+                
+				</ul>
  		    </ul>
-	            {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-	            {% for page in pages %}
-		            <a href="{{ page.url }}" class="{{ page.lang }}"> <img src="/img/{{ page.lang }}.png" alt="{{ page.lang }}" height="30" width="30"> </a>
-                {% endfor %}
+
                 
          </nav>
 
-
+<!-- -->
 
           </div><!-- /.container-fluid -->
         </nav>

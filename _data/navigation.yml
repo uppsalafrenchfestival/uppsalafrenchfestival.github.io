@@ -5,16 +5,10 @@ menu:
         - title: Program
           url: /program
           sublinks:
-            - title: Movie Selection
-              url: /program
             - title: Programmation
               url: /program
             - title: Tickets
               url: /tickets      
-            - title: La sociologue et l'ourson
-              url: /film/en/sociologue
-            - title: Vandal
-              url: /film/en/vandal
         - title: About us
           url: /
           sublinks: 
@@ -63,7 +57,7 @@ menu:
               url: /volunteering 
             - title: Nos partenaires
               url: /partners
-        - title: Nous contacter
+        - title: Contact
           url: /contact
     sv:
         - title: Hem
