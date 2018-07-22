@@ -10,6 +10,8 @@ year: 2017
 length: 1h35min
 date: 2018-11-24T18:15Z
 lang: en
+theme: theme1
+type: film
 ref: corporate
 ---
 

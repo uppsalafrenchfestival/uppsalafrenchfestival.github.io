@@ -9,7 +9,8 @@ real-link: lucas-belvaux
 permalink: /film/en/leonmorin
 lang: en
 year: 1961
-filter: bergman
+theme: Bergman Retrospective
+type: film
 length: 2h10min
 date: 2018-11-24T12:30Z
 

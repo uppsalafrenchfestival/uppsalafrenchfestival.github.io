@@ -8,8 +8,9 @@ length: "1h24min"
 actors: Zinedine Benchenine, Chloé Lecerf, Émile Berling
 year: 2013
 date: 2018-11-23T12:30Z
-filter: scolaire
+theme: scolaire
 permalink: /film/en/vandal
+type: film
 lang: en
 ref: vandal
 ---

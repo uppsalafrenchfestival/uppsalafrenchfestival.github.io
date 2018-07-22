@@ -8,6 +8,8 @@ actors: "Émilie Dequenne, Loïc Corbery, Sandra Nkaké"
 real-link: lucas-belvaux
 permalink: /film/en/passongenre
 lang: en
+type: film
+theme: theme1
 year: 2013
 length: 1h52min
 date: 2018-11-23T17:15Z

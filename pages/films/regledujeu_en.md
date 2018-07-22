@@ -8,6 +8,8 @@ permalink: /film/en/regledujeu
 lang: en
 actors: ""
 year: 2014
+type: film
+theme: theme1
 length: 1h46min
 date: 2018-11-24T15:15Z
 ref: regledujeu

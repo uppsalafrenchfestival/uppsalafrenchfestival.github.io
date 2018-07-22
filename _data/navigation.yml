@@ -1,7 +1,7 @@
 menu: 
     en:
         - title: Home
-          url: /
+          url: /index
         - title: Program
           url: /program
           sublinks:
@@ -27,7 +27,7 @@ menu:
           url: /contact
     fr:
         - title: Accueil
-          url: /
+          url: /index
         - title: Programme
           url: /program
           sublinks:
@@ -53,7 +53,7 @@ menu:
           url: /contact
     sv:
         - title: Hem
-          url: /
+          url: /index
         - title: Program
           url: /program
           sublinks:

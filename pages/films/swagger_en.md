@@ -8,8 +8,9 @@ length: "1h24min"
 actors: Abou Fofana, Aïssatou Dia, Nazario Giordano
 year: 2016
 date: 2018-11-22T12:30Z
-filter: scolaire
+theme: scolaire
 permalink: /film/en/swagger
+type: Documentary
 lang: en
 ref: swagger
 ---

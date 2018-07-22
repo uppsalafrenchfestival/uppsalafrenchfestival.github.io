@@ -1,0 +1,156 @@
+---
+layout: page
+title: Uppsala French FilmFestival 
+permalink: /programV1
+lang: en
+---
+
+  <!-- Slider Start -->
+<section id="global-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h1>PROGRAM OF THE FESTIVAL </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Portfolio Start -->
+<section id="portfolio-work">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block">
+              <div class="portfolio-menu">
+                
+                 <p> Filter by Theme: </p> 
+                <ul>
+                    <li class="filter" data-filter="all">Full program </li>
+                    <li class="filter" data-filter=".scolaire"> Scholar movies </li>
+                    <li class="filter" data-filter=".bergman" id="program_bergman"> Bergman Retrospective</li>
+                    <li class="filter" data-filter=".theme1">Theme 1</li>
+                    <li class="filter" data-filter=".theme2">Theme 2</li>
+                </ul>
+              </div>
+              
+              <div id="bergman_text" style="display:none;">
+                <h2> Bergman Retrospective </h2>
+              </div>
+              
+              <div class="portfolio-contant">
+                    
+                <ul id="portfolio-contant-active">   
+    
+                    {% assign sort_date = site.pages | sort: 'date' %}
+                    {% for a in sort_date %}
+                         {% if a.film != null and a.lang == page.lang %}
+                    
+                             <li class="mix {{ a.filter }}">
+                              <a href="{{ site.url }}/film/{{ page.lang }}/{{ a.ref }}">
+                                <div class="my_block"> 
+                                <center> <span class="entete"> {{ a.film}} </span> <br/>
+                                        <span class="small"> {{ a.date | date_to_long_string }}, {{ a.date | date: "%HH%M" }} </span>
+                                 </center>
+                                <img src="{{ site.url }}/img/films/{{ a.ref }}.jpeg" alt="{{ a.film }}">
+                                    <div class="overly">
+                                      <div class="position-center">
+                                        <h2> {{ a.film }} </h2>
+                                        <p> by {{ a.real }} </p>
+                                        <p> {{ a.date | date_to_long_string }}, {{ a.date | date: "%HH%M" }} </p>
+                                      </div>
+                                    </div>
+                                </div>
+                              </a>
+                              </li>
+                        {% endif %}
+                    {% endfor %}                                 
+                    
+                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Clients Logo Section Start -->
+<!--<section id="clients-logo-section">-->
+<!--  <div class="container">-->
+<!--    <div class="row">-->
+<!--      <div class="col-md-12">-->
+<!--        <div class="block">-->
+<!--          <div id="clients-logo" class="owl-carousel">-->
+<!--            <div class="clients-logo-img">-->
+<!--              <img src="{{ site.baseurl }}/img/clients/clients-logo1.png" alt="Features">-->
+<!--            </div>-->
+<!--            <div class="clients-logo-img">-->
+<!--              <img src="{{ site.baseurl }}/img/clients/clients-logo2.png" alt="Features">-->
+<!--            </div>-->
+<!--            <div class="clients-logo-img">-->
+<!--              <img src="{{ site.baseurl }}/img/clients/clients-logo3.png" alt="Features">-->
+<!--            </div>-->
+<!--            <div class="clients-logo-img">-->
+<!--              <img src="{{ site.baseurl }}/img/clients/clients-logo4.png" alt="Features">-->
+<!--            </div>-->
+<!--            <div class="clients-logo-img">-->
+<!--              <img src="{{ site.baseurl }}/img/clients/clients-logo5.png" alt="Features">-->
+<!--            </div>-->
+<!--            <div class="clients-logo-img">-->
+<!--              <img src="{{ site.baseurl }}/img/clients/clients-logo3.png" alt="Features">-->
+<!--            </div>-->
+<!--            <div class="clients-logo-img">-->
+<!--              <img src="{{ site.baseurl }}/img/clients/clients-logo2.png" alt="Features">-->
+<!--            </div>-->
+<!--            <div class="clients-logo-img">-->
+<!--              <img src="{{ site.baseurl }}/img/clients/clients-logo5.png" alt="Features">-->
+<!--            </div>-->
+<!--            <div class="clients-logo-img">-->
+<!--              <img src="{{ site.baseurl }}/img/clients/clients-logo1.png" alt="Features">-->
+<!--            </div>-->
+<!--            <div class="clients-logo-img">-->
+<!--              <img src="{{ site.baseurl }}/img/clients/clients-logo4.png" alt="Features">-->
+<!--            </div>-->
+<!--            <div class="clients-logo-img">-->
+<!--              <img src="{{ site.baseurl }}/img/clients/clients-logo5.png" alt="Features">-->
+<!--            </div>-->
+<!--            <div class="clients-logo-img">-->
+<!--              <img src="{{ site.baseurl }}/img/clients/clients-logo3.png" alt="Features">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+
+<!-- Call to action Start -->
+<!--<section id="call-to-action">-->
+<!--  <div class="container">-->
+<!--    <div class="row">-->
+<!--      <div class="col-md-12">-->
+<!--        <div class="block">-->
+<!--          <h2>We design delightful digital experiences.</h2>-->
+<!--          <p>Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design.</p>-->
+<!--          <a class="btn btn-default btn-call-to-action" href="#" >Tell Us Your Story</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->

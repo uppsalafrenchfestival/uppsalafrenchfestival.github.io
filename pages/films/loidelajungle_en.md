@@ -9,6 +9,8 @@ actors: Vincent Macaigne, Vimala Pons, Pascal Légitimus
 year: 2016
 date: 2018-11-23T20:30Z
 permalink: /film/en/loidelajungle
+theme: theme2
+type: film
 lang: en
 ref: loidelajungle
 ---

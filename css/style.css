@@ -58,3 +58,19 @@
     
 }
 
+#theme_layout
+{
+    display: none;
+}
+#type_layout
+{
+    display: none;
+}
+.title-section 
+{
+    background-color: #8c8c8c;
+
+    color: #FFFFFF;
+    padding: 15px;
+
+}

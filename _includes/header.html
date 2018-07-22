@@ -15,9 +15,9 @@
             <span class="icon-bar"></span>
             </button>
             {% if page.lang == 'en' %}
-            <a class="navbar-brand" href="{{ site.url }}">
+            <a class="navbar-brand" href="{{ site.url }}.html">
 	    {% else %}
-            <a class="navbar-brand" href="{{ site.url }}/{{ page.lang }}">	    
+            <a class="navbar-brand" href="{{ site.url }}/{{ page.lang }}.html">	    
 	    {% endif %}
               <img src="{{ site.url }}/img/logo1.png" alt="Logo">
             </a>
@@ -31,15 +31,15 @@
 				<li class="dropdown {{ class }}">
 				    
 		            {% if page.lang == 'en' %}
-				    <a href="{{ site.url }}{{ link.url }}" class="dropdown-toggle" \
-				    	data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-				    		{{ link.title }} <span class="caret"></span></a>
-			    {% else %}
-				    <a href="{{ site.url }}/{{ page.lang }}{{ link.url }}" \
-				    	class="dropdown-toggle" data-toggle="dropdown" role="button" \
-				    		 aria-haspopup="true" aria-expanded="false">
-				    		 {{ link.title }} <span class="caret"></span></a>				    
-			    {% endif %}
+					    <a href="{{ site.url }}{{ link.url }}.html" class="dropdown-toggle" \
+					    	data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						    		{{ link.title }} <span class="caret"></span></a>
+				    {% else %}
+					    <a href="{{ site.url }}/{{ page.lang }}{{ link.url }}.html" \
+					    	class="dropdown-toggle" data-toggle="dropdown" role="button" \
+					    		 aria-haspopup="true" aria-expanded="false">
+					    		 {{ link.title }} <span class="caret"></span></a>				    
+				    {% endif %}
 				    <ul class="dropdown-menu">
 				        {% for sublink in link.sublinks %}
 				            {% if sublink.title == 'separator' %}
@@ -47,9 +47,9 @@
 				            {% else %}
 				                <li>
                 		    	        {% if page.lang == 'en' %}
-    				                    <a href="{{ site.url }}{{ sublink.url }}">{{ sublink.title }}</a>
+    				                    <a href="{{ site.url }}{{ sublink.url }}.html">{{ sublink.title }}</a>
 				                    {% else %}
-				                        <a href="{{ site.url }}/{{ page.lang }}{{ sublink.url }}">{{ sublink.title }}</a>
+				                        <a href="{{ site.url }}/{{ page.lang }}{{ sublink.url }}.html">{{ sublink.title }}</a>
 				                    {% endif %}
 				                </li>
 				            {% endif %}
@@ -59,9 +59,9 @@
 			    {% else %}
 				<li class="{{ class }}">
 		    	        {% if page.lang == 'en' %}
-				    <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
+				    <a href="{{ site.url }}{{ link.url }}.html">{{ link.title }}</a>
 				{% else %}
-				    <a href="{{ site.url }}/{{ page.lang }}{{ link.url }}">{{ link.title }}</a>
+				    <a href="{{ site.url }}/{{ page.lang }}{{ link.url }}.html">{{ link.title }}</a>
 				{% endif %}
 				</li>
 			    {% endif %}
@@ -78,7 +78,7 @@
 				<ul class="dropdown-menu">
 	     			       {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
 	        	   		 {% for page in pages %}
-  					<li>  <a href="{{ page.url }}" class="{{ page.lang }}">
+  					<li>  <a href="{{ site.url }}/{{ page.url }}.html">
   						 <img src="{{ site.url }}/img/{{ page.lang }}.png" alt="{{ site.url }}/img/{{ page.lang }}.png" height="30" width="30"> </a>
           				</li>
               				  {% endfor %}
