@@ -5,72 +5,6 @@ permalink: /contact/
 ref: contact
 lang: en
 ---
-<script >
-
-$(function()
-{
-    function after_form_submitted(data)
-    {
-        if(data.result == 'success')
-        {
-            $('form#contact_form').hide();
-            $('#success_message').show();
-            $('#error_message').hide();
-        }
-        else
-        {
-            $('#error_message').append('<ul></ul>');
-
-            jQuery.each(data.errors,function(key,val)
-            {
-                $('#error_message ul').append('<li>'+key+':'+val+'</li>');
-            });
-            $('#success_message').hide();
-            $('#error_message').show();
-
-            //reverse the response on the button
-            $('button[type="button"]', $form).each(function()
-            {
-                $btn = $(this);
-                label = $btn.prop('orig_label');
-                if(label)
-                {
-                    $btn.prop('type','submit' );
-                    $btn.text(label);
-                    $btn.prop('orig_label','');
-                }
-            });
-
-        }//else
-    }
-
-	$('#contact_form').submit(function(e)
-      {
-        e.preventDefault();
-
-        $form = $(this);
-        //show some response on the button
-        $('button[type="submit"]', $form).each(function()
-        {
-            $btn = $(this);
-            $btn.prop('type','button' );
-            $btn.prop('orig_label',$btn.text());
-            $btn.text('Sending ...');
-        });
-
-
-                    $.ajax({
-                type: "POST",
-                url: 'send_email.php',
-                data: $form.serialize(),
-                success: after_form_submitted,
-                dataType: 'json'
-            });
-
-      });
-});
-
-</script>
 
 <!-- Slider Start -->
 <section id="global-header">
@@ -93,20 +27,20 @@ $(function()
         <div class="block">
           <form id="contact_form">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your Name">
+              <input type="text" class="form-control" name="name" placeholder="Your Name" required>
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" placeholder="Email Address" id="email" name="email" required>
+              <input type="email" class="form-control" placeholder="Email Address" id="email" name="mail" required>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Subject">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required>
             </div>
         </div>
       </div>
       <div class="col-md-6 col-sm-12">
         <div class="block">
             <div class="form-group">
-              <textarea class="form-area" rows="5" placeholder="Your Message"></textarea>
+              <textarea class="form-area" rows="5" name="message" placeholder="Your Message" required></textarea>
             </div>
             <button class="btn btn-default" type="submit">Send Message</button>
           </form>
@@ -114,15 +48,17 @@ $(function()
       </div>
     </div>
     
-    
-	<div id="error_message" style="width:100%; height:100%; display:none; ">
-		<h4>Error</h4>
-		Sorry there was an error sending your form.
+    <center>
+	<div id="error_message">
+		<h4>Error !</h4>
+		<p>Sorry there was an error sending your form. </p>
 	</div>
-	<div id="success_message" style="width:100%; height:100%; display:none; ">
-		<h2>Success! Your Message was Sent Successfully.</h2>
+	<div id="success_message">
+	    <h4> Success ! </h4>
+	    <p>Your Message was Sent Successfully.</p>
 	</div>
-	
+    </center>
+	<script src="{{ site.url }}/js/contact_form.js"> </script>
     
     <div id="contact-box" class="row">
       <div class="col-md-6 col-sm-12">
@@ -136,34 +72,12 @@ $(function()
               <i class="fa fa-envelope-o"></i>Email: <a href="mailto:info.fffu@gmail.com" > info.fffu@gmail.com </a>
             </li>
             <li>
-              <i class="fa fa-envelope-o"></i> President Phillipe Collet -- Phone: +46 070-443 93 80
+              <i class="fa fa-phone-square"></i>Phillipe Collet -- Phone: +46 070-443 93 80
             </li>
           </ul>
         </div>
       </div>
-<!--      <div class="col-md-6 col-sm-12">-->
-<!--        <div class="block">-->
-<!--          <h2>We Also Count In Google Map</h2>-->
-<!--            <div class="google-map">-->
-<!--              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.472979439986!2d-73.97769068489596!3d40.7516207793276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2590247c56379%3A0x15e13bea38b43e18!2sChrysler+Building!5e0!3m2!1sen!2sus!4v1477406538220" width="555" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--      </div>-->
     </div>
   </div>
 </section>
 
-<!-- Call to action Start -->
-<!--<section id="call-to-action">-->
-<!--  <div class="container">-->
-<!--    <div class="row">-->
-<!--      <div class="col-md-12">-->
-<!--        <div class="block">-->
-<!--          <h2>We design delightful digital experiences.</h2>-->
-<!--          <p>Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design.</p>-->
-<!--          <a class="btn btn-default btn-call-to-action" href="#" >Tell Us Your Story</a>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->

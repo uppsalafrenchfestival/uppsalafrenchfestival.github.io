@@ -72,14 +72,14 @@
 
   					 <a href="{{ page.url }}" class="dropdown-toggle" data-toggle="dropdown" \
   					 	role="button" aria-haspopup="true" aria-expanded="false">
-  					 	<img src="/img/{{ page.lang }}.png" alt="{{ page.lang }}" height="30" width="30">
+  					 	<img src="{{ site.url }}/img/{{ page.lang }}.png" alt="{{ page.lang }}" height="30" width="30">
   					 	<span class="caret"></span></a>
   					 
 				<ul class="dropdown-menu">
 	     			       {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
 	        	   		 {% for page in pages %}
   					<li>  <a href="{{ page.url }}" class="{{ page.lang }}">
-  						 <img src="/img/{{ page.lang }}.png" alt="{{ page.lang }}" height="30" width="30"> </a>
+  						 <img src="{{ site.url }}/img/{{ page.lang }}.png" alt="{{ site.url }}/img/{{ page.lang }}.png" height="30" width="30"> </a>
           				</li>
               				  {% endfor %}
                 

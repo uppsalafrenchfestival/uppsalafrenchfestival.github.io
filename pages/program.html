@@ -30,27 +30,31 @@ ref: program
                 <ul>
                     <li class="filter" data-filter="all">Full program </li>
                     <li class="filter" data-filter=".scolaire"> Scholar movies </li>
-                    <li class="filter" data-filter=".bergman"> Bergman Retrospective</li>
+                    <li class="filter" data-filter=".bergman" id="program_bergman"> Bergman Retrospective</li>
                     <li class="filter" data-filter=".theme1">Theme 1</li>
                     <li class="filter" data-filter=".theme2">Theme 2</li>
                 </ul>
               </div>
+              
+              <div id="bergman_text" style="display:none;">
+                <h2> Bergman Retrospective </h2>
+              </div>
+              
               <div class="portfolio-contant">
                     
-                <ul id="portfolio-contant-active">
-   
+                <ul id="portfolio-contant-active">   
     
                     {% assign sort_date = site.pages | sort: 'date' %}
                     {% for a in sort_date %}
                          {% if a.film != null and a.lang == page.lang %}
                     
                              <li class="mix {{ a.filter }}">
-                              <a href="{{ site.baseurl }}/film/{{ page.lang }}/{{ a.ref }}">
+                              <a href="{{ site.url }}/film/{{ page.lang }}/{{ a.ref }}">
                                 <div class="my_block"> 
                                 <center> <span class="entete"> {{ a.film}} </span> <br/>
                                         <span class="small"> {{ a.date | date_to_long_string }}, {{ a.date | date: "%HH%M" }} </span>
                                  </center>
-                                <img src="{{ site.baseurl }}/img/films/{{ a.ref }}.jpeg" alt="{{ a.film }}">
+                                <img src="{{ site.url }}/img/films/{{ a.ref }}.jpeg" alt="{{ a.film }}">
                                     <div class="overly">
                                       <div class="position-center">
                                         <h2> {{ a.film }} </h2>
