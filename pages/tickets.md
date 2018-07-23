@@ -1,7 +1,7 @@
 ---
-layout: tickets_layout
+layout: layout_tickets
 title: Uppsala French FilmFestival 
-permalink: /tickets
+permalink: /en/tickets
 ref: tickets
 lang: en
 ---

@@ -40,6 +40,8 @@
 #film-presentation .resumefilm
 {
     color: #000000;
+    font-size: 15px;
+    text-align: left; 
 }
 
 #portfolio-work .entete 

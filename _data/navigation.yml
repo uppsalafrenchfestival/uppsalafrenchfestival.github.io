@@ -86,6 +86,8 @@ film_presentation:
          venue: Venue
          trailer: Trailer
          time: Time
+         language: Language
+         languageswithsub: French with English subtitles
     fr:
          director: Realisateur
          actors: Acteurs
@@ -93,6 +95,8 @@ film_presentation:
          venue: Lieu
          trailer: Bande-annonce
          time: Heure
+         language: Langue
+         languageswithsub: Française avec Sous-titres anglais
     sv:
          director: Regissören
          actors: Rollerna
@@ -100,7 +104,8 @@ film_presentation:
          venue: Plats
          trailer: Trailer
          time: Tid
-
+         language: Language
+         languageswithsub: French with English subtitles
 tickets:
     en:
          pass: "Festival Pass Give access to all the movies and the opening ceremony 350kr"
