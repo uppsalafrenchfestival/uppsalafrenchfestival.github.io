@@ -386,7 +386,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #global-header .block {
   color: #E3E3E4;
   margin: 0 auto;
-  padding-left: 90px;
+  padding-left: 0px;
   text-align: center;
 }
 #global-header .block h1 {
@@ -680,7 +680,7 @@ font header .navbar-default .navbar-nav li a:hover {
   font-size: 18px;
 }
 
-#error_message
+#error_message_contact
 {
   width: 50%;
   background: #ff9999;
@@ -691,7 +691,7 @@ font header .navbar-default .navbar-nav li a:hover {
   display: none;
 }
 
-#success_message
+#success_message_contact
 {
   width: 50%;
   background: #b3ffb3;
@@ -832,4 +832,50 @@ footer .footer-manu ul li a {
 }
 footer .footer-manu ul li a:hover {
   color: #000;
+}
+
+
+/*******************************/ 
+/**-- 
+  Volunteer page 
+**/ 
+
+#volunteer {
+  padding: 100px 0;
+}
+#volunteer .block h2 {
+  padding-top: 35px;
+  line-height: 27px;
+  margin: 0;
+  text-align: center;
+}
+#volunteer .block p {
+  color: #7B7B7B;
+  padding-top: 20px;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+}
+
+
+#festival {
+  padding: 100px 0;
+}
+#festival .block h2 {
+  padding-top: 35px;
+  padding-bottom: : 35px;
+  line-height: 27px;
+  margin: 0;
+  text-align: center;
+}
+#festival .block p {
+  color: #7B7B7B;
+  padding-top: 20px;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+}
+
+#festival .block img {
+  padding: 15px;
 }

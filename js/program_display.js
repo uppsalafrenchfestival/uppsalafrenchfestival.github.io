@@ -2,22 +2,22 @@
 
 function display_program()
 {
-    $('#type_layout').hide();
-    $('#theme_layout').hide();
-    $('#programme_layout').show();
+    $('#type_layout').fadeOut();
+    $('#theme_layout').fadeOut();
+    $('#programme_layout').fadeIn();
 }
 
 function display_theme()
 {
-    $('#type_layout').hide();
-    $('#programme_layout').hide();
-    $('#theme_layout').show();
+    $('#type_layout').fadeOut();
+    $('#programme_layout').fadeOut();
+    $('#theme_layout').fadeIn();
 }
 
 function display_type()
 {
-    $('#programme_layout').hide();
-    $('#theme_layout').hide();
-    $('#type_layout').show();
+    $('#programme_layout').fadeOut();
+    $('#theme_layout').fadeOut();
+    $('#type_layout').fadeIn();
 }
 

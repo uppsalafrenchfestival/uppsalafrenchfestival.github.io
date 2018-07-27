@@ -50,11 +50,13 @@
 }
 #navigation #navbar .navbar-nav li a {
     color: #b2bbbd !important;
+    border-bottom: 2px solid #ffffff !important;
 }
-#navigation #navbar .navbar-nav li a:hover,
-#navigation #navbar .navbar-nav li a:focus {
-    color: #ffffff ;
-    border-bottom: 2px solid #ffffff;
+#navbar .navbar-nav li a:hover,
+#navbar .navbar-nav li a:focus {
+    background-color: #404040;
+    color: #ffffff;
+    border-bottom: 2px solid #000000;
 }
 #navigation #navbar .navbar-nav .active a {
     color: #ffffff !important;
