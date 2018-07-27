@@ -2,7 +2,6 @@
 layout: page
 ---
 
-
 <!-- Slider Start -->
 <section id="global-header">
   <div class="container">
@@ -39,45 +38,56 @@ layout: page
       
       <div class="col-md-6 col-sm-12">
         <div class="block">
-            <form action="tickets.html" method="POST">
+            <form id="ticket_form">
               <fieldset>
                 <legend> Buying your tickets</legend>
     
+                <div class="form-group" >            
+                  Billet Type:
+                  <select id="ticket_type" name="ticket_class" onChange="updateCheckoutValue()" >
+                      <option value="price:none"> ------  
+                      <option value="price:festival-pass"> Festival Pass 
+                      <option value="price:1ticket"> 1 ticket 
+                      <option value="price:3tickets"> 3 tickets 
+                  </select>
+                </div>
             <div class="form-group">            
-            Billet Type: <SELECT id="ticket_type" onChange="updateCheckoutValue()" >
-                <option value="price:none"> ------  
-                <option value="price:festival-pass"> Festival Pass 
-                <option value="price:1ticket"> 1 ticket 
-                <option value="price:3tickets"> 3 tickets 
-            </select>
-            </div>
-            <div class="form-group">            
-                Student Price: <input type="checkbox" onClick="updateCheckoutValue()" id="student_price"> 
+                Student Price: <input type="checkbox" name="student_price" onClick="updateCheckoutValue()" id="student_price"> 
             </div>       
             <div class="form-group">            
-                <input type="text" class="form-control" placeholder="Your Name">
+                <input type="text" class="form-control" name="name" placeholder="Your Name" required>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="email" placeholder="Email Address">
+                <input type="email" class="form-control" name="email" placeholder="Email Address" required>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="address" placeholder="Address">
+                <input type="text" class="form-control" name="address" placeholder="Address" required>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="zipcode" placeholder="Postal Code">
+                <input type="text" class="form-control" name="zipcode" placeholder="Postal Code" required>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="city" placeholder="City">
+                <input type="text" class="form-control" name="city" placeholder="City" required>
             </div>
             <div class="form-group">
-                <button class="btn btn-default" type="submit" id="checkout_button" >Checkout: 0kr</button>
+                <button class="btn btn-default" type="submit" id="checkout_tickets" >Checkout: 0kr</button>
             </div>
             </fieldset>
             </form>
           </div>
       </div>
-
+  <script src="{{ site.url }}/js/tickets_form.js"></script>
     </div>
   </div>
 </section>
 
+<center>
+<div id="error_message">
+    <h4>Error !</h4>
+    <p>Sorry there was an error sending your form. </p>
+  </div>
+  <div id="success_message">
+      <h4> Success ! </h4>
+      <p>Your Message was Sent Successfully.</p>
+  </div>
+</center>
