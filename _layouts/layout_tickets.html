@@ -32,28 +32,68 @@ layout: page
             <p> Student Prices(*):  70kr for one film, 180kr for 3 films</p>
             <p> Opening Ceremony: 120kr </p>
             <p> *: Justification will be asked </p>
-             
+            <br />
+            <br />
+          <?php
+         $dbhost = 'fff-afuppsala.se.mysql';
+         $dbuser = 'fff_afuppsala_s';
+         $dbpass = 'Password9705';
+         $conn = mysqli_connect("fff-afuppsala.se.mysql" , "fff_afuppsala_s", "gregorie9705", "fff_afuppsala_s");
+      
+         if(! $conn ) {
+            die('Could not connect: ' . mysql_error());
+         }
+         
+         echo 'Connected successfully';
+         mysql_close($conn);
+      ?>       
+      <fieldset> <legend>  Ordering your tickets </legend>    
+         <div class="form-group" >            
+            Billet Type:
+            <select id="ticket_type" name="ticket_class" >
+                <option value="none"> ------  
+                <option value="festival-pass"> Festival Pass 
+                <option value="seance1"> La sociologue et l'ourson 22/11 -- 19H
+                <option value="seance2"> Vandal 23/11 -- 19H
+            </select>
+            <input type="button" name="add" onClick="seance_add()" value="+" >
+
+          </div>
+          <div>
+            <h4> Your Order </h4>
+            <div class="container" id="ticket_order">
+              <div class="row">
+                <div class="col-sm-4"> <b> Film </b> </div>
+                <div class="col-sm-1"> <b> Quantity </b> </div>
+                <div class="col-sm-1"> <b> Price </b> </div>
+              </div>
+            </div>
+            <br /> 
+            <div class="container" id="ticket_order">
+              <div class="row">
+                <div class="col-sm-4"> Reduction </div>
+                <div class="col-sm-1" >  </div>
+                <div class="col-sm-1" id="reduction_price"> 0SEK </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">            
+              Student Price: <input type="checkbox" name="student_price" onClick="updateCheckoutValue()" id="student_price"> 
+          </div>       
+
+           <h4 id="order_total"> Total: 0kr </h4>
+           </fieldset>
         </div>
       </div>
-      
+         
       <div class="col-md-6 col-sm-12">
         <div class="block">
             <form id="ticket_form">
               <fieldset>
-                <legend> Buying your tickets</legend>
+                <legend> Your Information </legend>
     
-                <div class="form-group" >            
-                  Billet Type:
-                  <select id="ticket_type" name="ticket_class" onChange="updateCheckoutValue()" >
-                      <option value="price:none"> ------  
-                      <option value="price:festival-pass"> Festival Pass 
-                      <option value="price:1ticket"> 1 ticket 
-                      <option value="price:3tickets"> 3 tickets 
-                  </select>
-                </div>
-            <div class="form-group">            
-                Student Price: <input type="checkbox" name="student_price" onClick="updateCheckoutValue()" id="student_price"> 
-            </div>       
+            
+
             <div class="form-group">            
                 <input type="text" class="form-control" name="name" placeholder="Your Name" required>
             </div>
@@ -76,7 +116,7 @@ layout: page
             </form>
           </div>
       </div>
-  <script src="{{ site.url }}/js/tickets_form.js"></script>
+      <script src="{{ site.url }}/js/tickets_form.js"></script>
     </div>
   </div>
 </section>
