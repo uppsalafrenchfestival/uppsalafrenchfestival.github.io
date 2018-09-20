@@ -127,6 +127,17 @@ font header .navbar-default .navbar-nav li a:hover {
   letter-spacing: 10px;
   padding-bottom: 45px;
 }
+
+#slider .block a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 45px;
+  line-height: 60px;
+  letter-spacing: 10px;
+  padding-bottom: 45px;
+}
+
+
 #slider .block p {
   font-size: 23px;
   line-height: 40px;
@@ -137,11 +148,22 @@ font header .navbar-default .navbar-nav li a:hover {
 /*--
 	wrapper Start
 --*/
+#button_facebook_container
+{
+  padding-top: 10px;
+  margin: 0px;
+}
+#button_facebook
+{
+  text-align: right;
+}
+
+
 #intro {
   padding: 100px 0;
 }
 #intro .block h2 {
-  padding-top: 35px;
+/*  padding-top: 35px;*/
   line-height: 27px;
   margin: 0;
   text-align: center;
@@ -550,12 +572,24 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 
+/*#intro-cartouche .cartouche*/
+/*{*/
+/*  border: 1px solid black;*/
+/*}*/
+
+#intro-cartouche .cartouche
+{
+  border: 1px solid black;
+}
+
 #intro-cartouche .block
 {
   background-color: #c8c8c8;
-  border-radius: 15px;
   padding: 0px;
+/*  border: 1px solid black;*/
 }
+
+
 #intro-cartouche p
 {
   padding: 10px;
@@ -563,24 +597,31 @@ font header .navbar-default .navbar-nav li a:hover {
   text-align: center;
 }
 
+
+#intro-cartouche .nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+
 #intro-cartouche .cartouche-header
 {
   background-color: #404040;
   text-align: center;
   font-size: 20px;
   color: white;
-  border-radius: 15px 15px 0px 0px;
+/*  border-radius: 15px 15px 0px 0px;*/
   padding: 5px;
 }
 
 #intro-cartouche .cartouche-footer
 {
-    background-color: red;
+  background-color: red;
   text-align: center;
   font-size: 20px;
   color: black;
   font-weight: bold;
-  border-radius: 0px 0px 15px 15px;
+/*  border-radius: 0px 0px 15px 15px;*/
   padding: 5px;
 }
 
