@@ -56,11 +56,6 @@ a:active {
   font-size: 28px;
   font-weight: 600;
 }
-.section-title p {
-  font-family: 'Volkhov', serif;
-  font-style: italic;
-  color: #666;
-}
 /*--
 	Header Start
 --*/
@@ -517,7 +512,7 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #fff;
 }
 #portfolio-work .block .portfolio-contant ul li a h2 {
-  font-size: 22px;
+/*  font-size: 22px;*/
 /*  text-transform: uppercase;*/
   letter-spacing: 1px;
 }
@@ -529,7 +524,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #portfolio-work .block .portfolio-contant ul li a span {
   font-style: italic;
-  font-size: 13px;
+/*  font-size: 13px;*/
   color: #655E7A;
 }
 #portfolio-work .block .portfolio-contant ul img {

@@ -11,6 +11,7 @@ date: 2018-11-23T12:30Z
 permalink: /film/fr/vandal
 filter: scolaire
 lang: fr
+type: Scolaire
 ref: vandal
 ---
 

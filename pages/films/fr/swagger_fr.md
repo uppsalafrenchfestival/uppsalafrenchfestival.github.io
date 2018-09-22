@@ -10,6 +10,7 @@ year: 2016
 date: 2018-11-22T12:30Z
 filter: scolaire
 permalink: /film/fr/swagger
+type: Scolaire
 lang: fr
 ref: swagger
 ---

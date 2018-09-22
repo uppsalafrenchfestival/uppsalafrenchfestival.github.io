@@ -6,13 +6,15 @@ film: "Leon Morin"
 real: "Jean-Pierre Melville"
 actors: " Jean-Paul Belmondo, Emmanuelle Riva, Irène Tunc"
 real-link: lucas-belvaux
-permalink: /film/en/leonmorin
+permalink: /film/sv/leonmorin
 lang: sv
+type: Bergman Retrospective
 year: 1961
 length: 2h10min
 date: 2018-11-24T12:30Z
 filter: bergman
 ref: leonmorin
+opinion: "Text in swedish"
 ---
 
 

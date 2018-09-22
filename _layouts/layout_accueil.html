@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Uppsala French FilmFestival 
-permalink: /en/index
-lang: en
-ref: index
 ---
+
+{% assign page_text = site.data.navigation.accueil[page.lang] %}
 
 <!-- Slider Start -->
 <section id="slider">
@@ -12,7 +10,7 @@ ref: index
     <div class="row">
       <div class="col-md-10 col-md-offset-2">
         <div class="block">
-          <h1 class="animated fadeInUp">UPPSALA FRENCH FILMFESTIVAL <br> 22-25 November 2018, <a href="https://goo.gl/maps/sTxF4BZtKmH2" target="_blank"> SlottBiografen </a> </h1>
+          <h1 class="animated fadeInUp"> {{ page_text["festival"] }}<br> {{ page_text["date"] }}, <a href="https://goo.gl/maps/sTxF4BZtKmH2" target="_blank"> SlottBiografen </a> </h1>
 <!--          <p class="animated fadeInUp"> Uppsala French FilmFestival is back for its 10th edition </p>-->
         </div>
       </div>
@@ -28,8 +26,8 @@ ref: index
         <div class="block">
           <div class="section-title">
             <h2> Uppsala Franska FilmFestival 2018 Edition </h2>
-            <p> Welcome to the frenchiest festival in Uppsala ! This year's edition is about speech </p>
-            <p> The festival takes place in Uppsala between the 22nd and the 25th of November, all movies are shown in SlottBiografen.  </p>
+            <p> {{ page_text["presentation1"] }} </p>
+            <p> {{ page_text["presentation2"] }} </p>
 	    <br> <br> <br>
            </div>
          <div id=button_facebook class="fb-like" data-href="https://www.facebook.com/uppsalafranskafilmfestival/" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="false"> </div>
@@ -50,16 +48,16 @@ ref: index
         <div class="block">
           <h1 class="cartouche-header"> Program 2018 </h1>
               <p class="cartouche-text"> <img style="float: left;" src="{{ site.url }}/img/program-logo.png" width="80" height="80" alt="logo">
-             Our selection of movies is waiting for you </p>
+             {{ page_text["movie_selection"]}}</p>
           <a href="{{ site.url }}/{{ page.lang }}/program.html"><h1 class="cartouche-footer"> SEE MORE </h1> </a>
         </div>
       </div>
 
       <div class="col-sm-4 nopadding" class="cartouche">
         <div class="block">
-          <h1 class="cartouche-header"> Activities UFFF 2018  </h1>
+          <h1 class="cartouche-header"> {{ page_text["title_activity"]}}  </h1>
               <p class="cartouche-text"> <img style="float: left;" src="{{ site.url }}/img/activity-logo.png" width="80" height="80" alt="logo">
-             Check out all the activities planned for this edition </p>
+             {{ page_text["activity"] }} </p>
           <a href="{{ site.url }}/{{ page.lang }}/activities.html"> <h1 class="cartouche-footer"> INFOS </h1> </a>
         </div>
       </div>
@@ -68,7 +66,7 @@ ref: index
         <div class="block">
           <h1 class="cartouche-header"> Tickets </h1>
               <p class="cartouche-text"> <img style="float: left;" src="{{ site.url }}/img/tickets-logo.png" width="80" height="80" alt="logo">
-             Buy your tickets to be sure to save a spot </p>
+             {{ page_text["ticket_buy"]}} </p>
           <a href="{{ site.url }}/{{ page.lang }}/tickets.html"> <h1 class="cartouche-footer"> SEE MORE </h1> </a>
         </div>
       </div>
@@ -94,7 +92,7 @@ ref: index
   <div class="container">
     <div class="row">
       <div class="section-title">
-        <h2>They support us </h2>
+        <h2> {{ page_text["support"] }} </h2>
 <!--        <p>Thanks to </p>-->
       </div>
     </div>
@@ -131,13 +129,13 @@ ref: index
   <div class="container">
     <div class="row">
       <div class="col-sm-3">
-        <a href="https://af-upsal.org/" target="_blank">  <h4>French Alliance </h4> </a>
+        <a href="https://af-upsal.org/" target="_blank">  <h4> {{ page_text["frenchalliance"] }}</h4> </a>
       </div>
       <div class="col-sm-3">
-       <a href="https://institutfrancais-suede.com/?lang=sv" target="_blank">    <h4>French Institute of Sweden </h4> </a>
+       <a href="https://institutfrancais-suede.com/?lang=sv" target="_blank"> <h4> {{ page_text["institutfrancais"] }} </h4> </a>
       </div>
       <div class="col-sm-3">
-       <a href="https://www.uppsala.se/" target="_blank" > <h4> Uppsala Kommun </h4> </a>
+       <a href="https://www.uppsala.se/" target="_blank" > <h4> {{ page_text["uppsalakommun"] }} </h4> </a>
       </div>
       <div class="col-sm-3">
          <a href="https://www.regionuppsala.se/" target="_blank" > <h4> Upplands Län </h4> </a>

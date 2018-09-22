@@ -14,7 +14,7 @@ menu:
           sublinks: 
             - title: About the Festival
               url: /festival
-            - title: Team 
+            - title: French Alliance 
               url: /team
         - title: Get Involved
           url: /contact
@@ -40,7 +40,7 @@ menu:
           sublinks: 
             - title: A propos du Festival
               url: /festival
-            - title: L'équipe 
+            - title: L'Alliance Française
               url: /team
         - title: Rejoignez nous 
           url: /contact
@@ -66,7 +66,7 @@ menu:
           sublinks: 
             - title: Om festivalen
               url: /festival
-            - title: Team
+            - title: Alliance Francaise
               url: /team
         - title: Medverka 
           url: /contact
@@ -88,6 +88,7 @@ film_presentation:
          time: Time
          language: Language
          languageswithsub: French with English subtitles
+         pedagogique: Download Educational Package
     fr:
          director: Realisateur
          actors: Acteurs
@@ -97,15 +98,18 @@ film_presentation:
          time: Heure
          language: Langue
          languageswithsub: Française avec Sous-titres anglais
+         pedagogique: Télécharger Dossier Pédagogique
     sv:
          director: Regissören
-         actors: Rollerna
+         actors: Skådespelare
          date: Datum
          venue: Plats
          trailer: Trailer
          time: Tid
          language: Language
          languageswithsub: French with English subtitles
+         pedagogique: Hämta utbildningspaket
+
 tickets:
     en:
          pass: "Festival Pass Give access to all the movies and the opening ceremony 350kr"
@@ -114,3 +118,103 @@ tickets:
     sv: 
          pass: "Festival Pass Give access to all the movies and the opening ceremony 350kr"
 
+
+program:
+    en:
+        program: Program of the Festival
+        time: By Time
+        theme: By Themes
+        scolar: Film for schools
+        bergman: Bergman is 100 years old
+        bergman_intro: Introduction to Bergman
+        By: By
+        scolaire_intro: Uppsala Franska Filmfestival, där temat för året är ”ORDET”, La Parole, har glädjen att bjuda er till gratisvisning utav två franska filmer; Swagger, en dokumentär som handlar om förorten, ungdomar och fördomar, samt en fiktion, Vandal, som belyser identitet, familjeband och förebilder. Efter varje filmvisning kommer det finnas möjlighet till givande diskussioner kring filmerna och deras teman. Detta är ett ypperligt tillfälle att få lämna lektionssalen och uppleva fransk film!
+        program_download: Download the pdf version of the program here
+        pedagogique: Download Educational Package
+    fr: 
+        program: Programme du Festival
+        time: Par Date 
+        theme: Par Thème 
+        scolar: Films scolaires
+        bergman: Bergman a 100 ans 
+        bergman_intro: 1918 a été, à bien des égards, une année exceptionnelle. Elle aura vu la Grande Guerre s'achever mais aussi la terrible grippe espagnole se propager. Ingmar Bergman écrit à la première ligne de sa biographie Lanterna Magica "Quand je suis né en juillet 1918, maman avait la grippe espagnole et j'étais dans un si mauvais état que l'on m'a baptisé d'urgence à l'hôpital." C'est ainsi que commença l'existence du réalisateur considéré comme l'un des plus grands de l'histoire du cinéma. En hommage à son oeuvre et pour fêter le centenaire de sa naissance, nous avons le plaisir de présenter deux films.
+        By: Par
+        scolaire_intro: Uppsala Franska Filmfestival, där temat för året är ”ORDET”, La Parole, har glädjen att bjuda er till gratisvisning utav två franska filmer; Swagger, en dokumentär som handlar om förorten, ungdomar och fördomar, samt en fiktion, Vandal, som belyser identitet, familjeband och förebilder. Efter varje filmvisning kommer det finnas möjlighet till givande diskussioner kring filmerna och deras teman. Detta är ett ypperligt tillfälle att få lämna lektionssalen och uppleva fransk film!
+        pedagogique: Télécharger Dossier Pédagogique
+        program_download: Télécharger la version pdf du programme
+    sv:
+        program: Program
+        time: Tid
+        theme: Teman
+        scolar: Skolfilmer
+        bergman: Bergman fyller 100 
+        bergman_intro: Introduction to Bergman
+        By: Av
+        scolaire_intro: Uppsala Franska Filmfestival, där temat för året är ”ORDET”, La Parole, har glädjen att bjuda er till gratisvisning utav två franska filmer; Swagger, en dokumentär som handlar om förorten, ungdomar och fördomar, samt en fiktion, Vandal, som belyser identitet, familjeband och förebilder. Efter varje filmvisning kommer det finnas möjlighet till givande diskussioner kring filmerna och deras teman. Detta är ett ypperligt tillfälle att få lämna lektionssalen och uppleva fransk film!
+        pedagogique: Hämta utbildningspaket
+        program_download: Download the pdf version of the program here
+
+accueil:
+    en:
+        festival: Uppsala French Film Festival 
+        date: 22-25 November 2018
+        activity: Check out all the activities planned for this edition
+        ticket_buy: Buy your tickets to be sure to save a spot
+        title_activity: UFFF Activities 2018
+        support: They support us
+        institutfrancais: French Institute of Sweden
+        frenchalliance: French Alliance 
+        uppsalakommun: Uppsala Kommun
+        movie_selection: Our selection of movies is waiting for you 
+        presentation1: Welcome to the frenchiest festival in Uppsala ! This year's edition will explore the theme of speech
+        presentation2: The festival takes place in Uppsala between the 22nd and the 25th of November, all movies are shown in SlottBiografen
+    fr:
+        festival: Festival du Film Français d'Uppsala
+        date: 22-25 Novembre 2018
+        ticket_buy: Acheter vos tickets pour le festival
+        activity: Activités prévues pour l'édition 2018
+        title_activity: Activité UFFF 2018
+        support: Ils nous soutiennent
+        institutfrancais: Institut Français de Suède
+        frenchalliance: Alliance Française
+        uppsalakommun: Commune d'Uppsala
+        movie_selection: Regarder la sélection de film pour cette édition  
+        presentation1: Bienvienue au festival le plus français d'Uppsala. L'édition de cette année porte sur la parole 
+        presentation2: Le festival se déroule à Uppsala entre le 22 et le 25 Novembre, tous les films sont diffusés au SlottBiografen
+    sv:
+        festival: Uppsala Franska Festival
+        date: 22-25 November 2018
+        activity: Check out all the activities planned for this edition
+        ticket_buy: Buy your tickets to be sure to save a spot
+        title_activity: UFFF Activities 2018
+        support: They support us
+        institutfrancais: French Institute of Sweden
+        frenchalliance: French Alliance 
+        uppsalakommun: Uppsala Kommun
+        movie_selection: Our selection of movies is waiting for you 
+        presentation1: Welcome to the frenchiest festival in Uppsala ! This year's edition is about speech
+        presentation2: The festival takes place in Uppsala between the 22nd and the 25th of November, all movies are shown in SlottBiografen
+        
+        
+contact:
+    en:
+        howto: Please contact us through Facebook or leave us a message there
+        page_facebook: Our Facebook Page
+        envoi: Send
+    fr: 
+        howto: Vous pouvez nous contacter sur notre page Facebook ou laissez nosu un message ici 
+        page_facebook: Notre Page Facebook
+        envoi: Envoyer
+    sv:
+        howto: Please contact us through Facebook or leave us a message there
+        envoi: Send
+        page_facebook: Our Facebook Page
+        
+        
+        
+        
+        
+        
+        
+        
+        

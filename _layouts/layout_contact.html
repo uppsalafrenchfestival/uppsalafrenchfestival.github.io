@@ -2,14 +2,16 @@
 layout: page
 ---
 
+{% assign page_text = site.data.navigation.contact[page.lang] %}
+
 <!-- Slider Start -->
 <section id="global-header">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>Want to Join Us ? </h1>
-          <p>Please contact us through Facebook or leave us a message there</p>
+          <h1> Contact </h1>
+          <p> {{ page_text["howto"] }} </p>
         </div>
       </div>
     </div>
@@ -38,7 +40,7 @@ layout: page
             <div class="form-group">
               <textarea class="form-area" rows="5" name="message" placeholder="Your Message" required></textarea>
             </div>
-            <button class="btn btn-default" type="submit">Send Message</button>
+            <button class="btn btn-default" type="submit"> {{ page_text["envoi"] }}</button>
           </form>
         </div>
       </div>
@@ -62,7 +64,7 @@ layout: page
           <h2>Contact Information </h2>
           <ul class="address-block">
             <li>
-              <i class="fa fa-facebook"></i><a href="{{ site.addr_facebook }}" target="_blank">Our Facebook Page </a></li> 
+              <i class="fa fa-facebook"></i><a href="{{ site.addr_facebook }}" target="_blank"> {{ page_text["page_facebook"]}} </a></li> 
             </li>
             <li>
               <i class="fa fa-envelope-o"></i>Email: <a href="mailto:info.fffu@gmail.com" > info.fffu@gmail.com </a>

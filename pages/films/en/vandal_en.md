@@ -10,7 +10,7 @@ year: 2013
 date: 2018-11-23T12:30Z
 theme: scolaire
 permalink: /film/en/vandal
-type: Fiction
+type: Scolaire
 lang: en
 ref: vandal
 ---

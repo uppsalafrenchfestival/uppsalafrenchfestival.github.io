@@ -10,7 +10,7 @@ year: 2016
 date: 2018-11-22T12:30Z
 theme: scolaire
 permalink: /film/en/swagger
-type: Documentary
+type: Scolaire
 lang: en
 ref: swagger
 ---

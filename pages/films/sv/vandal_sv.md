@@ -10,6 +10,7 @@ year: 2013
 date: 2018-11-23T12:30Z
 filter: scolaire
 permalink: /film/sv/vandal
+type: Scolaire
 lang: sv
 ref: vandal
 ---

@@ -10,7 +10,11 @@
    text-align: center;
  }
  
- 
+#film-presentation
+{
+	padding: 30px;
+}
+
 #film-presentation a
 {
     text-decoration: underline
@@ -24,17 +28,20 @@
     font-weight: bold;
 }
 
-#film-presentation .textfilm
+#film-presentation p .textfilm
 {
     font-size: 15px;
 }
-
-#film-presentation .info
+#film-presentation p .name
 {
     color: #7B7B7B;
     font-size: 18px;
     font-weight: bold;
-    padding-left: 50px;
+}
+
+#film-presentation .textfilm
+{
+    font-size: 15px;
 }
 
 #film-presentation .resumefilm
@@ -44,18 +51,18 @@
     text-align: left; 
 }
 
-#portfolio-work .entete 
+#portfolio-work .my_block .entete 
 {
-    color: #000000;
-    font-weight: bold;
+    font-size: 25px;
 }
+
 #portfolio-work .my_block 
 {
-    border: 1px solid #EEF2F6;
+    border: 1px solid black;
     font-weight: bold;
     background-color: #cccccc;
     color: #7B7B7B;
-    font-size: 18px;
+/*    font-size: 18px;*/
     font-weight: bold;
     
 }
@@ -64,15 +71,20 @@
 {
     display: none;
 }
-#type_layout
+#bergman_layout
+{
+    display: none;
+}
+#scolar_layout
 {
     display: none;
 }
 .title-section 
 {
     background-color: #8c8c8c;
-
     color: #FFFFFF;
+    border-radius: 15px 0px 0px 0px;
     padding: 15px;
+/*    font-size: 25px;*/
 
 }

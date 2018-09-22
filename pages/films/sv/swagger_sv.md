@@ -11,6 +11,7 @@ date: 2018-11-22T12:30Z
 filter: scolaire
 permalink: /film/sv/swagger
 lang: sv
+type: Scolaire
 ref: swagger
 ---
 

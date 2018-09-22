@@ -8,39 +8,43 @@ layout: film_presentation
   </head>
   <body>
     {% include header.html %}
+    {% assign names = site.data.navigation.film_presentation[page.lang] %}
 	    <!-- Slider Start -->
 	<section id="global-header">
 	    <div class="container">
 		<div class="row">
 		    <div class="col-md-12">
 		        <div class="block">
-		            <h1> Program  </h1>
+		            <h1> {{ page.film }}  </h1>
 		        </div>
 		    </div>
 		</div>
 	    </div>
 	</section>
 
-	<section id="intro">
-	  <div class="container" id="film-presentation">
+	<section  id="film-presentation">
+	  <div class="container">
 	    <div class="row">
 	      <div class="col-md-7 col-sm-12">
 		<div class="block">
 		  <div class="section-title">
 		  
-  			{% assign names = site.data.navigation.film_presentation[page.lang] %}
 		    <h2> {{ page.film }}  </h2> <br/>
-		    <span class="name"> {{ names["director"] }}: </span> <span class="textfilm"> 
-		    	<a href=""> {{ page.real }} </a> </span> <br/>
+		    <span class="name"> {{ names["director"] }}: </span>
+		     <span class="textfilm"> {{ page.real }} </span> <br/>
 		    <span class="name"> {{ names["actors"] }}: </span> <span class="textfilm"> {{ page.actors }} </span> <br/>
-		    <span class="textfilm"> {{ page.type }} </span> <br/>
-		    <span class="textfilm"> {{ page.length }} | {{ page.year}} </span> <br/>
-		   </div>
-		   <div>
-    		<br /> 
-		   {{ content }}
-            
-            </div>
+		   <span class="name">  {{ page.length }} | {{ page.year}} </span>
+		     {{ content }}
+	             {% if page.type == "Scolaire" %}
+                       <p> <a href="{{ site.url }}/img/{{ page.ref }}.pdf" > {{ names["pedagogique"]}} </a> </p> 
+        	     {% endif %}
+        	     <br />
+    		      <span class="name"> {{ names["date"] }}: </span> <span class="textfilm"> {{ page.date | date_to_long_string }} </span> <br/>
+	  	      <span class="name"> {{ names["time"] }}: </span> <span class="textfilm"> {{ page.date | date: "%HH%M"}} </span> <br/>
+	  	      <span class="name"> {{ names["venue"] }}: </span> <span class="textfilm"> SlottBiografen </span><br/>
+	  	      <span class="name"> {{ names["language"] }}: </span> <span class="textfilm"> {{ names["languageswithsub"] }} </span>
+                
+                </div>
 		<br /> 
 		<span class="name"> {{ names["trailer"] }}: </span> <br/><br/>
  		<iframe width="560" height="315" src="{{page.trailer}}" \
@@ -50,12 +54,7 @@ layout: film_presentation
 	      </div><!-- .col-md-7 close -->
 	      <div class="col-md-5 col-sm-12">
 	    	<div class="block">
-	    	  <img src="{{ site.url }}/img/films/{{page.img}}" alt="Image of the {{page.title}}">
-    		  <span class="info"> {{ names["date"] }}: </span> <span class="textfilm"> {{ page.date | date_to_long_string }} </span> <br/>
-	  	      <span class="info"> {{ names["time"] }}: </span> <span class="textfilm"> {{ page.date | date: "%HH%M"}} </span> <br/>
-	  	      <span class="info"> {{ names["venue"] }}: </span> <span class="textfilm"> SlottBiografen </span><br/>
-	  	      <span class="info"> {{ names["language"] }}: </span> <span class="textfilm"> {{ names["languageswithsub"] }} </span>
-                
+	  	      <img src="{{ site.url }}/img/films/{{page.img}}" alt="Image of the {{page.title}}">
 	    	</div>
 	      </div><!-- .col-md-5 close -->
 	      

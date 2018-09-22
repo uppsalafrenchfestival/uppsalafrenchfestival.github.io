@@ -1,13 +1,17 @@
 ---
 layout: page
 ---
+
+{% assign page_text = site.data.navigation.program[page.lang] %}
+
+
   <!-- Slider Start -->
 <section id="global-header">
     <div class="container">
         <div class="row no-gutters">
             <div class="col-sm-12 ">
                 <div class="block">
-                    <h1>PROGRAM OF THE FESTIVAL </h1>
+                    <h1>{{ page_text["program"] }} </h1>
                 </div>
             </div>
         </div>
@@ -23,9 +27,10 @@ layout: page
               <div class="portfolio-menu">
                 
                 <ul>
-                    <li id="display_program" onclick="display_program()" > By Time </li>
-                    <li id="display_theme" onclick="display_theme()"> By Themes  </li>
-                    <li id="display_type" onclick="display_type()"> By Types </li>
+                    <li id="display_program" onclick="display_program()" > {{ page_text["time"] }} </li>
+                    <li id="display_theme" onclick="display_theme()"> {{ page_text["theme"] }}</li>
+                    <li id="display_type" onclick="display_school()"> {{ page_text["scolar"] }} </li>
+                    <li id="display_type" onclick="display_bergman()"> {{ page_text["bergman"] }} </li>
                 </ul>
               </div>
             </div>
@@ -33,6 +38,9 @@ layout: page
         </div>
       </div>
 
+    <div class="container">
+	<p> <a href="{{ site.url }}/img/program.pdf"> {{ page_text["program_download"]}} </a> </p>
+    </div>
             <div id="programme_layout">
               <div class="container">
             {% assign sort_theme = site.pages | where: "lang", page.lang | sort: 'date' %}
@@ -64,14 +72,14 @@ layout: page
                    <li>
                     <a href="{{ site.url }}/film/{{ page.lang }}/{{ a.ref }}.html">
                       <div class="my_block"> 
-                      <center> <span class="entete"> {{ a.film}} </span> <br/>
+                      <center> <span class="entete" > {{ a.film}} </span> <br/>
                               <span class="small"> {{ a.date | date_to_long_string }}, {{ a.date | date: "%HH%M" }} </span>
                        </center>
                       <img src="{{ site.url }}/img/films/{{ a.ref }}.jpeg" alt="{{ a.film }}">
                           <div class="overly">
                             <div class="position-center">
                               <h2> {{ a.film }} </h2>
-                              <p> by {{ a.real }} </p>
+                              <p>  {{ page_text["By"] }} {{ a.real }} </p>
                               <p> {{ a.date | date_to_long_string }}, {{ a.date | date: "%HH%M" }} </p>
                             </div>
                           </div>
@@ -113,7 +121,7 @@ layout: page
                                   <div class="overly">
                                     <div class="position-center">
                                       <h2> {{ a.film }} </h2>
-                                      <p> by {{ a.real }} </p>
+                                      <p>  {{ page_text["By"] }} {{ a.real }} </p>
                                       <p> {{ a.date | date_to_long_string }}, {{ a.date | date: "%HH%M" }} </p>
                                     </div>
                                   </div>
@@ -133,20 +141,18 @@ layout: page
             </div>
 
 
-            <div id="type_layout">
+            <div id="bergman_layout">
             <div class="container">
-            {% assign sort_type = site.pages | where: "lang", page.lang | sort: 'date' | group_by: 'type' %}
-            {% for p in sort_type %}
-              {% if p.name != '' %}
-              <h1  class="title-section"> {{ p.name }} </h1>
+            <p> {{ page_text["bergman_intro"] }} </p>
+            {% assign bergman_pages = site.pages | where: "lang", page.lang | where: "type", "Bergman Retrospective" | sort: 'date' %}
+            {% for a in bergman_pages %}
+              <h1  class="title-section"> {{ a.film }} </h1>
                 <div class="row">
                   <div class="col-md-12">
                     <div class="block">
                       <div class="portfolio-contant">                    
                         <ul>   
-                      {% for a in p.items %}
-                         {% if a.film != null %}
-                           <li>
+                    	  <li>
                             <a href="{{ site.url }}/film/{{ page.lang }}/{{ a.ref }}.html">
                               <div class="my_block"> 
                               <center> <span class="entete"> {{ a.film}} </span> <br/>
@@ -156,23 +162,65 @@ layout: page
                                   <div class="overly">
                                     <div class="position-center">
                                       <h2> {{ a.film }} </h2>
-                                      <p> by {{ a.real }} </p>
+                                      <p> {{ page_text["By"] }} {{ a.real }} </p>
                                       <p> {{ a.date | date_to_long_string }}, {{ a.date | date: "%HH%M" }} </p>
                                     </div>
                                   </div>
                               </div>
                             </a>
                             </li>
-                        {% endif %}
-                      {% endfor %}
+			    <li>
+			    <p> 
+			    {{ a.opinion }}
+			    
+			     </p>
+			    </li>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
-            {% endif %}
-            {% endfor %}  
+              {% endfor %}
+            </div>
+            </div>
+
+            <div id="scolar_layout">
+            <div class="container">
+            <p> {{ page_text["scolaire_intro"] }} </p>
+
+            {% assign scolaire_pages = site.pages | where: "lang", page.lang | where: "type", "Scolaire" | sort: 'date' %}
+              <h1  class="title-section"> {{ page_text["scolar"] }} </h1>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="block">
+                      <div class="portfolio-contant">                    
+                        <ul>   
+		            {% for a in scolaire_pages %}
+                    	  <li>
+                            <a href="{{ site.url }}/film/{{ page.lang }}/{{ a.ref }}.html">
+                              <div class="my_block"> 
+                              <center> <span class="entete"> {{ a.film}} </span> <br/>
+                                      <span class="small"> {{ a.date | date_to_long_string }}, {{ a.date | date: "%HH%M" }} </span> <br/>
+                               </center>
+                              <img src="{{ site.url }}/img/films/{{ a.ref }}.jpeg" alt="{{ a.film }}">
+                                  <div class="overly">
+                                    <div class="position-center">
+                                      <h2> {{ a.film }} </h2>
+                                      <p> {{ page_text["By"] }} {{ a.real }} </p>
+                                      <p> {{ a.date | date_to_long_string }}, {{ a.date | date: "%HH%M" }} </p>
+                                      <p> <a href="{{ site.url}}/img/{{ a.ref }}.pdf" > {{ page_text["pedagogique"] }} </a> </p>
+                                    </div>
+                                  </div>
+                              </div>
+                            </a>
+                            </li>
+	                   {% endfor %}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
+             </div>
             </div>
 </section>
 

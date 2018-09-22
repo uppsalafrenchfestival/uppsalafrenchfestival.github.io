@@ -10,11 +10,11 @@ permalink: /film/en/leonmorin
 lang: en
 year: 1961
 theme: Bergman Retrospective
-type: Fiction
+type: Bergman Retrospective
 length: 2h10min
 date: 2018-11-24T12:30Z
-
 ref: leonmorin
+opinion: "Text in English" 
 ---
 
 
