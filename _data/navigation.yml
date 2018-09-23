@@ -209,7 +209,21 @@ contact:
         howto: Please contact us through Facebook or leave us a message there
         envoi: Send
         page_facebook: Our Facebook Page
-        
+
+volunteering:
+    en: 
+        title: Being involved in the Uppsala French FilmFestival
+        text: Hello ! Super cool that you want to volunteer and/or become a part of the Uppsala FrenchFilmFestival assocation. You can volunteer either just to help us for our main festival which takes place on November 22-25. Or you can become a regular member of the association. Please fill the form in the link below and we'll get in touch with you as soon as possible !           
+        lien: Link to the form
+    fr:
+        title: Devenez bénévole du festival ! 
+        text: Salut ! C'est chouette que vous vouliez aider à l'organisation du festival du film français d'Uppsala. Vous pouvez venir nous aider ponctuellement pour l'évenement qui se déroule du 22 au 25 Novembre ou devenir membre régulier de l'association. Remplissez le formulaire ci-joint et nous vous contacterons rapidement ! ' Super cool that you want to volunteer and/or become a part of the Uppsala FrenchFilmFestival assocation.
+        lien: Lien vers le formulaire
+    sv: 
+        title: Being involved in the Uppsala French FilmFestival
+        text: Hello ! Super cool that you want to volunteer and/or become a part of the Uppsala FrenchFilmFestival assocation. You can volunteer either just to help us for our main festival which takes place on November 22-25. Or you can become a regular member of the association. Please fill the form in the link below and we'll get in touch with you as soon as possible ! 
+        lien: Link to the form
+       
         
         
         

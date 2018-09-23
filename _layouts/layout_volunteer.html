@@ -2,6 +2,8 @@
 layout: page
 ---
 
+{% assign page_text = site.data.navigation.volunteering[page.lang] %}
+
   <!-- Slider Start -->
 <section id="global-header">
     <div class="container">
@@ -22,16 +24,16 @@ layout: page
       <div class="col-md-7 col-sm-12">
         <div class="block">
           <div>
-            <h2> Being involved in the Uppsala French FilmFestival </h2>
-            <p> Hello ! Super cool that you want to volunteer and/or become a part of the Uppsala FrenchFilmFestival assocation. You can volunteer either just to help us for our main festival which takes place on November 22-25. Or you can become a regular member of the association. Please fill the form in the link below and we'll get in touch with you as soon as possible ! </p>
-       		<center> <a href="https://docs.google.com/forms/d/1cX4QA8v0stOBaBQVectUvwwd_gg-P9r2nUdfkRnqyiU" target="_blank" > Link to the form  </a> </center>
+            <h2> {{ page_text["title"] }} </h2>
+            <p> {{ page_text["text"] }} </p>
+       		<center> <a href="https://docs.google.com/forms/d/1cX4QA8v0stOBaBQVectUvwwd_gg-P9r2nUdfkRnqyiU" target="_blank" > {{ page_text["lien"] }}   </a> </center>
        		</div>
 
 	</div>
       </div><!-- .col-md-7 close -->
       <div class="col-md-5 col-sm-12">
         <div class="block">
-          <img width="315" height="560" src="{{ site.url}}/img/recrutement.png">
+          <img width="315" height="340" src="{{ site.url}}/img/contact_{{page.lang}}.png">
         </div>
       </div><!-- .col-md-5 close -->
     </div>

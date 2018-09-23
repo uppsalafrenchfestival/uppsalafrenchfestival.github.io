@@ -53,7 +53,8 @@
 
 #portfolio-work .my_block .entete 
 {
-    font-size: 25px;
+/*    text-align: center; */
+    font-size: 30px;
 }
 
 #portfolio-work .my_block 
