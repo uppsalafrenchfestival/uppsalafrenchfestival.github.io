@@ -34,19 +34,6 @@ layout: page
             <p> *: Justification will be asked </p>
             <br />
             <br />
-          <?php
-         $dbhost = 'fff-afuppsala.se.mysql';
-         $dbuser = 'fff_afuppsala_s';
-         $dbpass = 'Password9705';
-         $conn = mysqli_connect("fff-afuppsala.se.mysql" , "fff_afuppsala_s", "gregorie9705", "fff_afuppsala_s");
-      
-         if(! $conn ) {
-            die('Could not connect: ' . mysql_error());
-         }
-         
-         echo 'Connected successfully';
-         mysql_close($conn);
-      ?>       
       <fieldset> <legend>  Ordering your tickets </legend>    
          <div class="form-group" >            
             Billet Type:

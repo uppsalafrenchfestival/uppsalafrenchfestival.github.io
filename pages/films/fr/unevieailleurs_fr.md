@@ -9,6 +9,7 @@ permalink: /film/fr/unevieailleurs
 year: 2016
 length: 1h36min
 date: 2018-11-22T21:00Z
+date_trad: Jeudi 22 Novembre
 lang: fr
 ref: unevieailleurs
 ---

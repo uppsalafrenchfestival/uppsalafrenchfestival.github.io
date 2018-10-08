@@ -9,6 +9,7 @@ permalink: /film/en/unevieailleurs
 year: 2016
 length: 1h36min
 date: 2018-11-22T21:00Z
+date_trad: Thursday November 22
 theme: theme2
 type: Fiction
 lang: en

@@ -8,7 +8,8 @@ actors: "Céline Sallette, Lambert Wilson, Stéphane De Groodt"
 permalink: /film/fr/corporate
 year: 2017
 length: 1h35min
-date: 2018-11-24T18:15Z
+date: 2018-11-24T18:00Z
+date_trad: Samedi 24 Novembre
 lang: fr
 filter: theme1
 ref: corporate

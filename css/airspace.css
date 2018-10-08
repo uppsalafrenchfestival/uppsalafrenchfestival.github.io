@@ -120,17 +120,14 @@ font header .navbar-default .navbar-nav li a:hover {
   font-size: 45px;
   line-height: 60px;
   letter-spacing: 10px;
-  padding-bottom: 45px;
+  padding-bottom: 0px;
 }
 
-#slider .block a {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  font-size: 45px;
-  line-height: 60px;
-  letter-spacing: 10px;
-  padding-bottom: 45px;
+#slider .block h1 a {
+  color: red;
+/*  font-weight: bold;*/
 }
+
 
 
 #slider .block p {
@@ -412,7 +409,7 @@ font header .navbar-default .navbar-nav li a:hover {
   letter-spacing: 6px;
   padding-bottom: 15px;
   margin-top: 0;
-  text-transform: capitalize;
+/*  text-transform: capitalize;*/
 }
 #global-header .block p {
   font-size: 16px;

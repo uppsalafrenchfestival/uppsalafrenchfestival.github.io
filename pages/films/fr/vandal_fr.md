@@ -7,12 +7,13 @@ real: "Hélier Cisterne"
 length: "1h24min"
 actors: Zinedine Benchenine, Chloé Lecerf, Émile Berling
 year: 2013
-date: 2018-11-23T12:30Z
+date: 2018-11-22T9:00Z
+date_trad: Jeudi 22 Novembre
 permalink: /film/fr/vandal
 filter: scolaire
 lang: fr
 type: Scolaire
-ref: vandal
+ref: vandal1
 ---
 
 

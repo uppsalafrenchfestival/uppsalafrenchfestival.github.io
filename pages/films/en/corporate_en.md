@@ -8,7 +8,8 @@ actors: "Céline Sallette, Lambert Wilson, Stéphane De Groodt"
 permalink: /film/en/corporate
 year: 2017
 length: 1h35min
-date: 2018-11-24T18:15Z
+date: 2018-11-24T18:00Z
+date_trad: Saturday November 24
 lang: en
 theme: theme1
 type: Fiction

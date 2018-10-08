@@ -12,7 +12,8 @@ year: 1947
 theme: Bergman Retrospective
 type: Bergman Retrospective
 length: 86min
-date: 2018-11-25T20:30Z
+date: 2018-11-25T20:15Z
+date_trad: Dimanche 25 Novembre
 opinion: "Un film qu'il affectionnait. Bien qu’il ait parfois l’image d’un auteur austère, Bergman a toujours aimé la force comique et la poésie du cinéma burlesque, dont Tati est un extraordinaire héritier. Il jouera lui-même avec ce genre dans Toutes ses femmes (För att inte tala om alla dessa kvinnor). L’année-même du film que nous montrons, il réalise L'éternel Mirage (Skepp till India land) : il a alors 29 ans et c'est son troisième film."
 ref: jourdefete
 ---

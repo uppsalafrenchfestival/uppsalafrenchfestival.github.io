@@ -7,7 +7,8 @@ real: "Hélier Cisterne"
 length: "1h24min"
 actors: Zinedine Benchenine, Chloé Lecerf, Émile Berling
 year: 2013
-date: 2018-11-23T12:30Z
+date: 2018-11-22T9:00Z
+date_trad: Torsdag November 22
 filter: scolaire
 permalink: /film/sv/vandal
 type: Scolaire
@@ -17,4 +18,4 @@ ref: vandal
 
 
 <span class="name"> Synopsis:</span> <br/>
-<span class="resumefilm"> svenska resume </span>
+<span class="resumefilm"> Chérif är en kille i femtonårsåldern som har problem med att komma tillrätta med livet. Efter att ha blivit arresterad för femtioelfte gången omplaceras han och får börja bo hos sin morbror i Strasbourg där det är tänkt att han ska avsluta sin byggarbetarutbildning. Chérif trivs inte med sitt nya liv, men en kväll får han följa med sin kusin Thomas ut. Han visar sig vara medlem i ett graffittigäng som spenderar nätterna med att tagga stadens ytor med sitt märke, och som förgäves försöker överträffa den våghalsige taggaren Vandal. </span>

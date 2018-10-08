@@ -12,7 +12,8 @@ type: Fiction
 theme: theme1
 year: 2013
 length: 1h52min
-date: 2018-11-23T17:15Z
+date: 2018-11-23T16:00Z
+date_trad: Friday November 23rd
 ref: passongenre
 ---
 

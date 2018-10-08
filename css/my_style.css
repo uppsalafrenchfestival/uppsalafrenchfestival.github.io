@@ -6,7 +6,6 @@
 }
 #navigation .navbar-brand {
     padding-right: 28px;
-    width: 280px;
     border-right: 3px solid rgba(255, 255, 255, 0.1);
     font-family: "hobo-std", sans-serif;
     font-style: italic;
@@ -18,19 +17,6 @@
     margin-top: -10px;
     margin-right: 1rem;
     width: 250px;
-}
-
-
-#navigation .navbar-brand1 {
-    padding-right: 28px;
-    width: 280px;
-    color: #5fcf80 !important;
-}
-#navigation .navbar-brand1 {
-    float: left;
-    margin-top: -10px;
-    margin-right: 1rem;
-    width: 50px;
 }
 
 #navigation #navbar {
@@ -48,10 +34,16 @@
         margin-right: 0;
     }
 }
+
+#navigation #navbar .navbar-nav ul{
+	padding: 0px;
+	margin: 0px;
+}
 #navigation #navbar .navbar-nav li a {
     color: #b2bbbd !important;
     border-bottom: 2px solid #ffffff !important;
 }
+
 #navbar .navbar-nav li a:hover,
 #navbar .navbar-nav li a:focus {
     background-color: #404040;

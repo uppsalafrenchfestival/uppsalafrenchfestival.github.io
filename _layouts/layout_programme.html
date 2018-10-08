@@ -48,7 +48,7 @@ layout: page
               {% if a.date != null %}
                 {% capture day %}{{ a.date | date: '%m%d%Y' }}{% endcapture %}
                 {% if previous_day == null %}
-                  <h1 class="title-section"> {{ a.date | date: "%A, %B %e, %Y" }}</h1>
+                  <h1 class="title-section">  {{ a.date_trad }} </h1>
                         <div class="row">
                           <div class="col-md-12">
                             <div class="block">
@@ -61,7 +61,7 @@ layout: page
                           </div>
                         </div>
                       </div>
-                    <h1 class="title-section">{{ a.date | date: "%A, %B %e, %Y" }}</h1>
+                    <h1 class="title-section"> {{ a.date_trad }}</h1>
                       <div class="row">
                         <div class="col-md-12">
                           <div class="block">

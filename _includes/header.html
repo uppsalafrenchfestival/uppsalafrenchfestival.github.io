@@ -48,19 +48,19 @@
 				</li>
 			    {% endif %}
 			{% endfor %}
-				<li class=nil> <a href="{{ site.addr_facebook }}" target="_blank">Facebook </a></li>
+			<li class=nil> <a href="{{ site.addr_facebook }}" target="_blank">Facebook </a></li>
 
 			<li class="dropdown {{ class }}">
 
-  					 <a href="{{ page.url }}" class="dropdown-toggle" data-toggle="dropdown" \
-  					 	role="button" aria-haspopup="true" aria-expanded="false">
-  					 	<img src="{{ site.url }}/img/{{ page.lang }}.png" alt="{{ page.lang }}" height="30" width="30">
-  					 	<span class="caret"></span></a>
+			 <a href="{{ site.url }}{{ page.url }}.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			 	<img src="{{ site.url }}/img/{{ page.lang }}.png" alt="{{ page.lang }}" height="30" width="30">
+			 	<span class="caret"></span>
+			 </a>
   					 
 				<ul class="dropdown-menu">
 	     			       {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
 	        	   		 {% for page in pages %}
-  					<li>  <a href="{{ site.url }}/{{ page.url }}.html">
+  					<li>  <a href="{{ site.url }}{{ page.url }}.html">
   						 <img src="{{ site.url }}/img/{{ page.lang }}.png" alt="{{ site.url }}/img/{{ page.lang }}.png" height="30" width="30"> </a>
           				</li>
               				  {% endfor %}

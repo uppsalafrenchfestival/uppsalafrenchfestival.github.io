@@ -8,6 +8,7 @@ length: 1h49min
 actors: Vincent Macaigne, Vimala Pons, Pascal Légitimus
 year: 2016
 date: 2018-11-23T20:30Z
+date_trad: Friday November 23
 permalink: /film/en/loidelajungle
 theme: theme2
 type: Fiction

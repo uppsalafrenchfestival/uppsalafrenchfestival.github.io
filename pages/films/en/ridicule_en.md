@@ -11,7 +11,8 @@ year: 1995
 length: 1h37min
 type: Fiction
 theme: theme2
-date: 2018-11-23T15:00Z
+date: 2018-11-23T18:30Z
+date_trad: Friday November 23rd
 ref: ridicule
 ---
 

@@ -169,6 +169,13 @@ function tickets_form_answer(data)
     }
 }
 
+
+$("#ticket_form").ready(function(){
+	warning("I am here ");
+	
+}
+
+
 $("#ticket_form").submit(function(e)
 {
     e.preventDefault();

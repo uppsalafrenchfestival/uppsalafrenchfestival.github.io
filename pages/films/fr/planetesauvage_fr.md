@@ -9,6 +9,7 @@ permalink: /film/fr/planetesauvage
 year: 1973
 length: 1h12min
 date: 2018-11-25T13:00Z
+date_trad: Dimanche 25 Novembre
 lang: fr
 ref: planetesauvage
 ---

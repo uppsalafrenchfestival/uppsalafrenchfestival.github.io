@@ -59,7 +59,7 @@ menu:
           sublinks:
             - title: Programmering
               url: /program
-            - title: Tickets
+            - title: Biljetter
               url: /tickets      
         - title: Om oss
           url: /
@@ -73,7 +73,7 @@ menu:
           sublinks:
             - title: Bli Volontär
               url: /volunteering 
-            - title: Nos partenaires
+            - title: Våra partners
               url: /partners
         - title: Kontakt
           url: /contact
@@ -187,14 +187,13 @@ accueil:
         activity: Check out all the activities planned for this edition
         ticket_buy: Buy your tickets to be sure to save a spot
         title_activity: UFFF Activities 2018
-        support: They support us
+        support: Våra sponsorer
         institutfrancais: French Institute of Sweden
         frenchalliance: French Alliance 
         uppsalakommun: Uppsala Kommun
         movie_selection: Our selection of movies is waiting for you 
         presentation1: Welcome to the frenchiest festival in Uppsala ! This year's edition is about speech
         presentation2: The festival takes place in Uppsala between the 22nd and the 25th of November, all movies are shown in SlottBiografen
-        
         
 contact:
     en:
@@ -206,9 +205,9 @@ contact:
         page_facebook: Notre Page Facebook
         envoi: Envoyer
     sv:
-        howto: Please contact us through Facebook or leave us a message there
-        envoi: Send
-        page_facebook: Our Facebook Page
+        howto: Vänligen kontakta oss via Facebook eller lämna oss ett meddelande där
+        envoi: Sicka
+        page_facebook: Facebook-sida
 
 volunteering:
     en: 

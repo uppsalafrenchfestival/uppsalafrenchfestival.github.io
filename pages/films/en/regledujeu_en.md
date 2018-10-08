@@ -13,6 +13,7 @@ theme: theme1
 type: Fiction
 length: 1h46min
 date: 2018-11-24T15:15Z
+date_trad: Saturday November 24
 ref: regledujeu
 ---
 <span class="name"> Synopsis:</span> <br/>

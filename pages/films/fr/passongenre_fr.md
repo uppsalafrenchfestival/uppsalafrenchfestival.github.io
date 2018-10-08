@@ -10,7 +10,8 @@ actors: "Émilie Dequenne, Loïc Corbery, Sandra Nkaké"
 lang: fr
 year: 2013
 length: 1h52min
-date: 2018-11-23T17:15Z
+date: 2018-11-23T16:00Z
+date_trad: Vendredi 23 Novembre
 ref: passongenre
 ---
 

@@ -13,6 +13,7 @@ theme: Bergman Retrospective
 type: Bergman Retrospective
 length: 86min
 date: 2018-11-25T20:30Z
+date_trad: Sunday November 25
 opinion: "Text in english"
 ref: jourdefete
 ---

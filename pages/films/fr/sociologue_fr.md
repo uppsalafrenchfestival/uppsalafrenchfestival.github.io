@@ -8,7 +8,8 @@ real: "Etienne Chaillou et Mathias Thery"
 permalink: /film/fr/sociologue
 year: 2016
 length: 1h18min
-date: 2018-11-25T15:00Z
+date: 2018-11-25T15:15Z
+date_trad: Dimanche 25 Novembre
 lang: fr
 ref: sociologue
 ---
