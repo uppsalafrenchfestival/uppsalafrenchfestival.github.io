@@ -576,7 +576,7 @@ font header .navbar-default .navbar-nav li a:hover {
 
 #intro-cartouche .block
 {
-  background-color: #c8c8c8;
+/*  background: url("../img/theme.jpeg") no-repeat;*/
   padding: 0px;
 /*  border: 1px solid black;*/
 }
@@ -584,11 +584,10 @@ font header .navbar-default .navbar-nav li a:hover {
 
 #intro-cartouche p
 {
-  padding: 10px;
-  padding-right: 50px;
+/*  padding: 10px;*/
+/*  padding-right: 50px;*/
   text-align: center;
 }
-
 
 #intro-cartouche .nopadding {
    padding: 0 !important;
@@ -604,6 +603,7 @@ font header .navbar-default .navbar-nav li a:hover {
   color: white;
 /*  border-radius: 15px 15px 0px 0px;*/
   padding: 5px;
+  margin: 0px;
 }
 
 #intro-cartouche .cartouche-footer
@@ -615,14 +615,9 @@ font header .navbar-default .navbar-nav li a:hover {
   font-weight: bold;
 /*  border-radius: 0px 0px 15px 15px;*/
   padding: 5px;
+  margin: 0px;
 }
 
-/*
-      <div class="col-sm-4" class="cartouche">
-          <h1 class="cartouche-header"> Activities UFFF 2018  </h1>
-          <p class="cartouche-text"> Come to discover what you reserve this new edition </p>
-          <h1 class="cartouche-footer"> INFOS </h1>
-*/
 /*---------------------------------------------
 					Work Close
 -----------------------------------------------*/
