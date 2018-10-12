@@ -11,7 +11,7 @@ date: 2018-11-23T13:00Z
 date_trad: Friday November 23rd
 theme: scolaire
 permalink: /film/en/vandal1
-type: Scolaire
+type: Scolaire1
 lang: en
 ref: vandal1
 ---

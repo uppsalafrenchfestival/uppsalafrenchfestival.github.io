@@ -12,7 +12,7 @@ date_trad: Fredag November 23
 filter: scolaire
 permalink: /film/sv/swagger1
 lang: sv
-type: Scolaire
+type: Scolaire1
 ref: swagger1
 ---
 

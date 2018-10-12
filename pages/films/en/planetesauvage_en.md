@@ -13,6 +13,7 @@ length: 1h12min
 date: 2018-11-25T13:00Z
 date_trad: Sunday November 25
 lang: en
+debat: yes
 ref: planetesauvage
 ---
 

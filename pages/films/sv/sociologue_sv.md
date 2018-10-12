@@ -10,6 +10,7 @@ year: 2016
 length: 1h18min
 date: 2018-11-25T15:00Z
 date_trad: Söndag November 25
+debat: yes
 lang: sv
 ref: sociologue
 ---

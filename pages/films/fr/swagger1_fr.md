@@ -11,7 +11,7 @@ date: 2018-11-23T09:00Z
 date_trad: Vendredi 23 Novembre
 filter: scolaire
 permalink: /film/fr/swagger1
-type: Scolaire
+type: Scolaire1
 lang: fr
 ref: swagger1
 ---

@@ -11,7 +11,7 @@ date: 2018-11-23T09:00Z
 date_trad: Friday November 23
 theme: scolaire
 permalink: /film/en/swagger1
-type: Scolaire
+type: Scolaire1
 lang: en
 ref: swagger1
 ---

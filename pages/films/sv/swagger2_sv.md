@@ -12,7 +12,8 @@ date_trad: Söndag November 25
 filter: scolaire
 permalink: /film/sv/swagger2
 lang: sv
-type: Scolaire
+type: Scolaire1
+debat: yes
 ref: swagger2
 ---
 

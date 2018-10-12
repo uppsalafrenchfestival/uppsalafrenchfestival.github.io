@@ -13,6 +13,7 @@ date_trad: Saturday November 24
 lang: en
 theme: theme1
 type: Fiction
+debat: yes
 ref: corporate
 ---
 

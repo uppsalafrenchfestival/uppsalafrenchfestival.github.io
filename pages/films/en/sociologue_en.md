@@ -12,6 +12,7 @@ date: 2018-11-25T15:15Z
 date_trad: Sunday November 25
 theme: theme1
 type: Documentary
+debat: yes
 lang: en
 ref: sociologue
 ---

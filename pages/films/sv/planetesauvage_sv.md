@@ -10,6 +10,7 @@ year: 1973
 length: 1h12min
 date: 2018-11-25T13:00Z
 date_trad: Söndag November 25
+debat: yes
 lang: sv
 ref: planetesauvage
 ---

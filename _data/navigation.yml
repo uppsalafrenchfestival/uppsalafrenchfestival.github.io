@@ -89,6 +89,7 @@ film_presentation:
          language: Language
          languageswithsub: French with English subtitles
          pedagogique: Download Educational Package
+         debat: The movie projection will be followed by a debate between the audience and an invited speakers
     fr:
          director: Realisateur
          actors: Acteurs
@@ -99,6 +100,7 @@ film_presentation:
          language: Langue
          languageswithsub: Française avec Sous-titres anglais
          pedagogique: Télécharger Dossier Pédagogique
+         debat: La projection du film sera prolongé par un débat organisé entre le public et des invités extérieurs
     sv:
          director: Regissören
          actors: Skådespelare
@@ -109,7 +111,7 @@ film_presentation:
          language: Language
          languageswithsub: French with English subtitles
          pedagogique: Hämta utbildningspaket
-
+         debat: The movie projection will be followed by a debate between the audience and an invited speakers
 tickets:
     en:
          pass: "Festival Pass Give access to all the movies and the opening ceremony 350kr"
@@ -166,8 +168,9 @@ accueil:
         frenchalliance: French Alliance 
         uppsalakommun: Uppsala Kommun
         movie_selection: Our selection of movies is waiting for you 
-        presentation1: Welcome to the frenchiest festival in Uppsala ! This year's edition will explore the theme of speech
-        presentation2: The festival takes place in Uppsala between the 22nd and the 25th of November, all movies are shown in SlottBiografen
+        presentation1: This year, for its 7th edition, the Uppsala Franska FilmFestival choose a set of films around the theme of the speech. Stories where expression and communications are cut, broken, hidden or non understood, but also, stories where speech gathers people and save life. 
+        presentation2: The festival also celebreates the 100th birthday anniversary of Ingmar Bergman in his favourite cinema with . Also, you will be able to enjoy an opening ceremony cattered by our partner Picard. You can also watch "Victoria", one of the best comedy movie from these last years
+        presentation3: Join us on these 4 days of festival and discover with us the diverse aspects of speech in films at the Slottsbiografen	
     fr:
         festival: Festival du Film Français d'Uppsala
         date: 22-25 Novembre 2018
@@ -179,8 +182,9 @@ accueil:
         frenchalliance: Alliance Française
         uppsalakommun: Commune d'Uppsala
         movie_selection: Regarder la sélection de film pour cette édition  
-        presentation1: Bienvienue au festival le plus français d'Uppsala. L'édition de cette année porte sur la parole 
-        presentation2: Le festival se déroule à Uppsala entre le 22 et le 25 Novembre, tous les films sont diffusés au SlottBiografen
+        presentation1: Cette année, pour sa septième édition, le Festival a choisi de vous présenter des films dans lesquels vous pourriez vous reconnaitre. Des histoires où l’expression et la communication sont rompues, perdues, cachées ou incomprises. Mais aussi des récits où la parole rassemble, rend justice et sauve des vies.
+        presentation2: Le festival célèbrera également le centième anniversaire d’Ingmar Bergman dans sa salle de prédilection avec les films ”Jour de fête” et ”Léon Morin prêtre”. Enfin, lors d’une soirée d’ouverture exceptionnelle assortie d’un buffet proposé par notre partenaire Picard, vous pourrez apprécier ”Victoria”, l’une des plus belles comédies françaises de ces dernières années.
+        presentation3: Soyez les bienvenu.e.s lors de ces quatre jours et découvrez les mille et une facettes de La Parole au cinéma Slotts !
     sv:
         festival: Uppsala Franska Festival
         date: 22-25 November 2018
@@ -192,8 +196,9 @@ accueil:
         frenchalliance: French Alliance 
         uppsalakommun: Uppsala Kommun
         movie_selection: Our selection of movies is waiting for you 
-        presentation1: Welcome to the frenchiest festival in Uppsala ! This year's edition is about speech
-        presentation2: The festival takes place in Uppsala between the 22nd and the 25th of November, all movies are shown in SlottBiografen
+        presentation1: This year, for its 7th edition, the Uppsala Franska FilmFestival choose a set of films around the theme of the speech. Stories where expression and communications are cut, broken, hidden or non understood, but also, stories where speech gathers people and save life. 
+        presentation2: The festival also celebreates the 100th birthday anniversary of Ingmar Bergman in his favourite cinema with . Also, you will be able to enjoy an opening ceremony cattered by our partner Picard. You can also watch "Victoria", one of the best comedy movie from these last years
+        presentation3: Join us on these 4 days of festival and discover with us the diverse aspects of speech in films at the SLottsbiografen
         
 contact:
     en:

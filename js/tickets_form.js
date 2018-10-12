@@ -1,3 +1,13 @@
+function seance_add()
+{
+
+    var selected_option = document.getElementById('ticket_type');
+
+    var ticket_type = selected_option.value;
+    var ticket_text = selected_option[selected_option.selectedIndex].text;
+    
+    addOrder(ticket_type , ticket_text);
+}
 
 function getTotal()
 {
@@ -74,25 +84,8 @@ function getPriceTicket(ticket_type)
     return value;
 }
 
-function removeOrder()
-{
-
-}
-
-function seance_add()
-{
-    var selected_option = document.getElementById('ticket_type');
-
-    var ticket_type = selected_option.value;
-    var ticket_text = selected_option[selected_option.selectedIndex].text;
-
-    addOrder(ticket_type , ticket_text);
-}
-
 function addOrder(ticket_type, ticket_text)
 {
- 
-
     if(ticket_type == "none")
         return;
 
@@ -133,61 +126,47 @@ function updateCheckoutValue()
     document.getElementById('order_total').innerHTML = "Total: " + total + "kr";
 }
 
-function tickets_form_answer(data)
+function getOrder()
 {
+    var data = [];
+
+    for( var i = 1; i <= 2 ; i++) 
+    {
+    	var id = "seance" + i;
+    	var element = document.getElementById(id);
+
+	if ( element != null )
+	{
+		var quantity_display = document.getElementById(id + '_quantity');
+		var nb_tickets = parseInt(quantity_display.innerHTML);
+  	    	alert("Key = " + i + " Value = " + nb_tickets);
+		data.push({ key: i, value: nb_tickets });   
+	}
+    }
+    return data; 
+}
+
+//$("#ticket_form").submit(function(e)
+function check_order()
+{
+//    e.preventDefault();
+
+//    $form = $(this);
+    tickets = getOrder();
+    alert(tickets);
     
-    if(data.result == 'success')
-    {
-//        $('form#contact_form').hide();
-        $('#success_message').show();
-        $('#error_message').hide();
-    }
-    else
-    {
-        $('#error_message').append('<ul></ul>');
-
-        jQuery.each(data.errors,function(key,val)
-        {
-            $('#error_message ul').append('<li>'+key+':'+val+'</li>');
-        });
-        $('#success_message').hide();
-        $('#error_message').show();
-
-        //reverse the response on the button
-        $('button[type="button"]', $form).each(function()
-        {
-            $btn = $(this);
-            label = $btn.prop('orig_label');
-            if(label)
-            {
-                $btn.prop('type','submit' );
-                $btn.text(label);
-                $btn.prop('orig_label','');
-            }
-        });
-
-    }
-}
-
-
-$("#ticket_form").ready(function(){
-	warning("I am here ");
+//for(var key in tickets) {
+//	    var value = tickets[key];
+//  	    alert("Key = " + key + " Value = " + value);
+//	}
 	
+//    alert(data);    
+//    $.ajax({
+//        type: "POST",
+//        url: 'http://localhost/uppsalafrenchfestival.github.io/php/tickets_checking.php',
+//        data: $form.serialize(),
+//        success: tickets_form_answer,
+//        dataType: 'json'
+//    });
 }
-
-
-$("#ticket_form").submit(function(e)
-{
-    e.preventDefault();
-
-    $form = $(this);
-
-    $.ajax({
-        type: "POST",
-        url: 'http://localhost/uppsalafrenchfestival.github.io/php/tickets_handling.php',
-        data: $form.serialize(),
-        success: tickets_form_answer,
-        dataType: 'json'
-    });
-});
 

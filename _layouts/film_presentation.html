@@ -44,7 +44,10 @@ layout: film_presentation
 	  	      <span class="name"> {{ names["time"] }}: </span> <span class="textfilm"> {{ page.date | date: "%HH%M"}} </span> <br/>
 	  	      <span class="name"> {{ names["venue"] }}: </span> <span class="textfilm"> SlottBiografen </span><br/>
 	  	      <span class="name"> {{ names["language"] }}: </span> <span class="textfilm"> {{ names["languageswithsub"] }} </span>
-                
+
+                	{% if page.debat %}
+                	<br /> <br /> <span class="textfilm"> {{ names["debat"] }} </span>
+                	{% endif %}
                 </div>
 		<br /> 
 		<span class="name"> {{ names["trailer"] }}: </span> <br/><br/>

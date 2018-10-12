@@ -11,6 +11,7 @@ year: 2014
 length: 1h46min
 date: 2018-11-24T15:15Z
 date_trad: Samedi 24 Novembre
+debat: yes
 ref: regledujeu
 ---
 

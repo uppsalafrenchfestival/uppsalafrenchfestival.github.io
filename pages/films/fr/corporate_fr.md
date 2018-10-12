@@ -12,6 +12,7 @@ date: 2018-11-24T18:00Z
 date_trad: Samedi 24 Novembre
 lang: fr
 filter: theme1
+debat: yes
 ref: corporate
 ---
 

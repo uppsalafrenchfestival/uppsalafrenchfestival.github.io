@@ -9,6 +9,7 @@ permalink: /film/fr/sociologue
 year: 2016
 length: 1h18min
 date: 2018-11-25T15:15Z
+debat: yes
 date_trad: Dimanche 25 Novembre
 lang: fr
 ref: sociologue

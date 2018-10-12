@@ -10,6 +10,7 @@ year: 1973
 length: 1h12min
 date: 2018-11-25T13:00Z
 date_trad: Dimanche 25 Novembre
+debat: yes
 lang: fr
 ref: planetesauvage
 ---

@@ -12,7 +12,7 @@ date_trad: Vendredi 23 Novembre
 permalink: /film/fr/vandal1
 filter: scolaire
 lang: fr
-type: Scolaire
+type: Scolaire1
 ref: vandal1
 ---
 

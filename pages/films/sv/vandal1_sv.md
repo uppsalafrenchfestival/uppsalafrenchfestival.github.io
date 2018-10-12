@@ -11,7 +11,7 @@ date: 2018-11-23T13:00Z
 date_trad: Fredag, November 23
 filter: scolaire
 permalink: /film/sv/vandal1
-type: Scolaire
+type: Scolaire1
 lang: sv
 ref: vandal1
 ---

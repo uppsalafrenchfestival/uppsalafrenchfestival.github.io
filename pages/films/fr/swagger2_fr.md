@@ -11,7 +11,8 @@ date: 2018-11-25T17:45Z
 date_trad: Dimanche 25 Novembre
 filter: scolaire
 permalink: /film/fr/swagger2
-type: Scolaire
+type: Scolaire1
+debat: yes
 lang: fr
 ref: swagger2
 ---

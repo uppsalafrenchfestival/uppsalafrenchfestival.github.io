@@ -11,7 +11,8 @@ date: 2018-11-25T17:45Z
 date_trad: Sunday November 25
 theme: scolaire
 permalink: /film/en/swagger2
-type: Scolaire
+type: Scolaire1
+debat: yes
 lang: en
 ref: swagger2
 ---
