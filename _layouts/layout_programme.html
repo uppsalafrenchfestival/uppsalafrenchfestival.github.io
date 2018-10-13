@@ -71,7 +71,7 @@ layout: page
                 {% endif %}
                    <li>
                     <a href="{{ site.url }}/film/{{ page.lang }}/{{ a.ref }}.html">
-                      <div class="my_block"> 
+                      <div class="header_film_program"> 
                       <center> <span class="entete" > {{ a.film}} </span> <br/>
                               <span class="small"> {{ a.date | date_to_long_string }}, {{ a.date | date: "%HH%M" }} </span>
                        </center>
@@ -113,7 +113,7 @@ layout: page
                          {% if a.film != null %}
                            <li>
                             <a href="{{ site.url }}/film/{{ page.lang }}/{{ a.ref }}.html">
-                              <div class="my_block"> 
+                              <div class="header_film_program"> 
                               <center> <span class="entete"> {{ a.film}} </span> <br/>
                                       <span class="small"> {{ a.date | date_to_long_string }}, {{ a.date | date: "%HH%M" }} </span>
                                </center>
@@ -154,7 +154,7 @@ layout: page
                         <ul>   
                     	  <li>
                             <a href="{{ site.url }}/film/{{ page.lang }}/{{ a.ref }}.html">
-                              <div class="my_block"> 
+                              <div class="header_film_program"> 
                               <center> <span class="entete"> {{ a.film}} </span> <br/>
                                       <span class="small"> {{ a.date | date_to_long_string }}, {{ a.date | date: "%HH%M" }} </span>
                                </center>
@@ -198,7 +198,7 @@ layout: page
 		            {% for a in scolaire_pages %}
                     	  <li>
                             <a href="{{ site.url }}/film/{{ page.lang }}/{{ a.ref }}.html">
-                              <div class="my_block"> 
+                              <div class="header_film_program"> 
                               <center> <span class="entete"> {{ a.film}} </span> <br/>
                                       <span class="small"> {{ a.date | date_to_long_string }}, {{ a.date | date: "%HH%M" }} </span> <br/>
                                </center>

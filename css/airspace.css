@@ -10,6 +10,18 @@
 @import url(//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 @import url(//fonts.googleapis.com/css?family=Volkhov:400italic);
 /* var text-decoration */
+
+@font-face {
+    font-family: "Tahu";
+    src: url( http://localhost/uppsalafrenchfestival.github.io/fonts/Tahu.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Mplus-regular";
+    src: url( http://localhost/uppsalafrenchfestival.github.io/fonts/mplus-1mn-regular.ttf) format("truetype");
+}
+
+
 /*--
 	Common Css
 --*/
@@ -445,9 +457,10 @@ font header .navbar-default .navbar-nav li a:hover {
   position: relative;
 }
 #portfolio-work .block .portfolio-menu ul .active {
-  color: #655E7A;
+/*  color: #655E7A;*/
   position: relative;
 }
+
 #portfolio-work .block .portfolio-menu ul .active:before {
   content: "\f0d7";
   position: absolute;
@@ -522,7 +535,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #portfolio-work .block .portfolio-contant ul li a span {
   font-style: italic;
 /*  font-size: 13px;*/
-  color: #655E7A;
+/*  color: #655E7A;*/
 }
 #portfolio-work .block .portfolio-contant ul img {
   width: 100%;

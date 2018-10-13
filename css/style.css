@@ -51,18 +51,25 @@
     text-align: left; 
 }
 
-#portfolio-work .my_block .entete 
+#portfolio-work .small
+{
+    font-size: 15px;
+    color: #000000;
+}
+
+#portfolio-work .entete 
 {
 /*    text-align: center; */
     font-size: 25px;
+    color: #000000;
 }
 
-#portfolio-work .my_block 
+#portfolio-work .header_film_program 
 {
-    border: 1px solid black;
+/*    border: 1px solid black;*/
+    border-radius: 15px 15px 0px 0px;
     font-weight: bold;
     background-color: #cccccc;
-    color: #7B7B7B;
 /*    font-size: 18px;*/
     font-weight: bold;
     
@@ -82,7 +89,8 @@
 }
 .title-section 
 {
-    background-color: #8c8c8c;
+    font-family: Mplus-regular, Roboto, sans-serif;
+    background-color: #357abf;
     color: #FFFFFF;
     border-radius: 15px 0px 0px 0px;
     padding: 15px;
