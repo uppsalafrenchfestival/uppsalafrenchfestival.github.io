@@ -15,7 +15,8 @@ keep_files:
 # Site settings
 title: Uppsala French Movies Festival
 #url: "http://localhost/uppsalafrenchfestival.github.io"
-url: "https://uppsalafrenchfestival.github.io"
+#url: "https://uppsalafrenchfestival.github.io"
+url: http://fff-afuppsala.se
 
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"

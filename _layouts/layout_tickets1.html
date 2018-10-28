@@ -1,0 +1,52 @@
+---
+layout: page
+---
+
+<!-- Slider Start -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1> Tickets </h1>
+          <p> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% assign page_text = site.data.navigation.tickets[page.lang] %}
+
+
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+            <form id="ticket_form">
+              <fieldset>
+                <legend> Your Information </legend>
+    
+            
+
+            <div class="form-group">            
+                <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="address" placeholder="Address" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="zipcode" placeholder="Postal Code" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="city" placeholder="City" required>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default" type="submit" id="checkout_tickets" >Checkout: 0kr</button>
+            </div>
+            </fieldset>
+            </form>
+          </div>
+      </div>
+

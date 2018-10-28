@@ -30,7 +30,7 @@ $("#contact_form").submit(function(e)
 
     $.ajax({
         type: "POST",
-        url: 'http://localhost/uppsalafrenchfestival.github.io/php/send_email.php',
+        url: 'http://fff-afuppsala.se/php/send_email.php',
         data: $form.serialize(),
         success: after_form_submitted,
         dataType: 'json'

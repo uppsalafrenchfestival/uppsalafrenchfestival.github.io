@@ -9,8 +9,6 @@ real-link: lucas-belvaux
 permalink: /film/en/openthedoor
 lang: en
 year: 2006
-theme: Bergman Retrospective
-type: Bergman Retrospective
 length: 12min
 date: 2018-11-25T20:15Z
 date_trad: Sunday November 25

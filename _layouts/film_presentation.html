@@ -29,7 +29,7 @@ layout: film_presentation
 		<div class="block">
 		  <div class="section-title">
 		  
-		    <h2> {{ page.film }}  </h2> <br/>
+<!--		    <h2> {{ page.film }}  </h2> <br/>-->
 		    <span class="name"> {{ names["director"] }}: </span>
 		     <span class="textfilm"> {{ page.real }} </span> <br/>
 		    <span class="name"> {{ names["actors"] }}: </span> <span class="textfilm"> {{ page.actors }} </span> <br/>
@@ -42,7 +42,7 @@ layout: film_presentation
         	     <br />
     		      <span class="name"> {{ names["date"] }}: </span> <span class="textfilm"> {{ page.date | date_to_long_string }} </span> <br/>
 	  	      <span class="name"> {{ names["time"] }}: </span> <span class="textfilm"> {{ page.date | date: "%HH%M"}} </span> <br/>
-	  	      <span class="name"> {{ names["venue"] }}: </span> <span class="textfilm"> SlottBiografen </span><br/>
+	  	      <span class="name"> {{ names["venue"] }}: </span> <span class="textfilm"> Slottsbiografen </span><br/>
 	  	      <span class="name"> {{ names["language"] }}: </span> <span class="textfilm"> {{ names["languageswithsub"] }} </span>
 
                 	{% if page.debat %}
