@@ -1,12 +1,13 @@
-function seance_add()
+function seance_remove( seance)
 {
+	var ticket_type = "seance" + seance;
+	removeOrder(ticket_type)
+}
 
-    var selected_option = document.getElementById('ticket_type');
-
-    var ticket_type = selected_option.value;
-    var ticket_text = selected_option[selected_option.selectedIndex].text;
-    
-    addOrder(ticket_type , ticket_text);
+function seance_add( seance )
+{
+    var ticket_type = "seance" + seance;
+    addOrder(ticket_type);
 }
 
 function getTotal()
@@ -45,13 +46,11 @@ function getTotal()
         }
     }
 
-    if(nb_tickets >= 3)
-    {
-        price_reduction = Math.floor(nb_tickets / 3) * getPriceTicket("reduction"); 
-        reduction_display = document.getElementById("reduction_price");
-        reduction_display.innerHTML = price_reduction + "SEK";
-        total += price_reduction;
-    }
+	price_reduction = Math.floor(nb_tickets / 3) * getPriceTicket("reduction"); 
+	reduction_display = document.getElementById("reduction_price");
+	reduction_display.innerHTML = price_reduction + "SEK";
+	total += price_reduction;
+
     return total;
 }
 
@@ -84,7 +83,7 @@ function getPriceTicket(ticket_type)
     return value;
 }
 
-function addOrder(ticket_type, ticket_text)
+function removeOrder(ticket_type)
 {
     if(ticket_type == "none")
         return;
@@ -92,13 +91,54 @@ function addOrder(ticket_type, ticket_text)
     var entry = document.getElementById(ticket_type);
     if( entry == null)
     {   
+    	return; 
+    }
+    else
+    {
+        var quantity_display = document.getElementById(ticket_type + '_quantity');
+        var price_display = document.getElementById(ticket_type + '_price');
+        if( quantity_display == null || price_display == null ){
+            alert("Error");
+            return;
+        }
+        nb_tickets = parseInt(quantity_display.innerHTML);        
+        nb_tickets--;
+        if( nb_tickets < 0)
+        {
+		nb_tickets = 0;     
+        }
+	quantity_display.innerHTML = "" + nb_tickets;
+
+	var seance_input = document.getElementById(ticket_type + '_input');
+	seance_input.value = "" + nb_tickets;
+
+	price_per_ticket = getPriceTicket(ticket_type);
+	price = price_per_ticket * nb_tickets;
+	price_display.innerHTML =  "" + price + "SEK";
+
+	updateCheckoutValue();
+    }
+   
+}
+
+function addOrder(ticket_type)
+{
+    if(ticket_type == "none")
+        return;
+        
+    var entry = document.getElementById(ticket_type);
+    if( entry == null)
+    {   
         price_per_ticket = getPriceTicket(ticket_type);
         code_to_add = "<div class=\"row\" id=\""+ ticket_type + "\">";
-        code_to_add += "<div class=\"col-sm-4\" id=\"" + ticket_type + "_text\"> " + ticket_text + " </div>";
+        code_to_add += "<div class=\"col-sm-4\" id=\"" + ticket_type + "_text\"> " + ticket_type + " </div>";
         code_to_add += "<div class=\"col-sm-1\" id=\"" + ticket_type + "_quantity\"> 1 </div>";
         code_to_add += "<div class=\"col-sm-1\" id=\"" + ticket_type + "_price\" > "+ price_per_ticket+ "SEK </div> </div>";
 
         $('#ticket_order').append(code_to_add);
+
+        var seance_input = document.getElementById(ticket_type + '_input');
+	seance_input.value = "1";
     }
     else
     {
@@ -111,6 +151,9 @@ function addOrder(ticket_type, ticket_text)
         nb_tickets = parseInt(quantity_display.innerHTML);        
         nb_tickets++;
         quantity_display.innerHTML = "" + nb_tickets;
+
+        var seance_input = document.getElementById(ticket_type + '_input');
+	seance_input.value = "" + nb_tickets;
 
         price_per_ticket = getPriceTicket(ticket_type);
         price = price_per_ticket * nb_tickets;

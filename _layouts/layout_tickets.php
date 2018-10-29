@@ -34,32 +34,35 @@ layout: page
             <p> *: Justification will be asked </p>
             <br />
             <br />
+            
       <fieldset> <legend>  Ordering your tickets </legend>    
-         <div class="form-group" >            
-            Billet Type:
-            <select id="ticket_type" name="ticket_class" >
-                <option value="none"> ------  
-		<option value="seance1"> Vandal -- 22/10 -- 9H00
-		<option value="seance2"> Swagger -- 22/10 -- 13H00
-		<option value="seance3"> Victoria -- 22/10 -- 17H30
-		<option value="seance4"> Une vie ailleurs -- 22/10 -- 21H00
-		<option value="seance5"> Swagger -- 23/10 -- 9H00
-		<option value="seance6"> Vandal -- 23/10 -- 13H00
-		<option value="seance7"> Pas son genre -- 23/10 -- 16H00
-		<option value="seance8"> Ridicule -- 23/10 -- 17H30
-		<option value="seance9"> La loi de la jungle-- 23/10 -- 21H00
-		<option value="seance10"> Leon Morin -- 24/10 -- 12H30
-		<option value="seance11"> Les regles du jeu -- 22/10 -- 15H15
-		<option value="seance12"> Corporate -- 24/10 -- 18H00
-		<option value="seance13"> Victoria -- 24/10 -- 21H00
-		<option value="seance14"> La planete sauvage  -- 25/10 -- 13H00
-		<option value="seance15"> La sociologue et l’ourson -- 25/10 -- 15H15
-		<option value="seance16"> Jour de fete -- 25/10 -- 20H15
-            </select>
-	
-            <input type="button" name="add" onclick="seance_add()" value="+" >
+           <form action="{{ site.url }}/{{ page.lang }}/tickets1.php" method="POST">
+          
+          
+              <?php 
+            	echo "Hello !\n";
+            	$db = mysqli_connect('localhost', 'root', 'gregorie');
 
-          </div>
+		mysqli_select_db($db , "UFFF");
+		$sql = "SELECT * FROM seances";
+		$req = mysqli_query($db , $sql);
+
+	    while($data = mysqli_fetch_assoc($req))
+	    {
+                echo $data["film"];
+                echo "<input type=\"button\" onclick=\"seance_add(" . $data["id"] . ")\" value=\"+\" >";
+                echo "<input id=\"seance". $data["id"] . "_input\" name=\"seance". $data["id"] . "_input\" \
+                           type=\"text\" value=\"0\" autocomplete=off readonly=\"readonly\">";  
+                echo "<input type=\"button\" onclick=\"seance_remove(" . $data["id"] . ")\"  value=\"-\" >";
+
+		echo "<br />";
+	    }
+
+		mysqli_close($db);
+      
+            ?>
+
+
           <div>
             <h4> Your Order </h4>
             <div class="container" id="ticket_order">
@@ -83,7 +86,8 @@ layout: page
           </div>       
 
            <h4 id="order_total"> Total: 0kr </h4>
-           <button class="btn btn-default" type="button" onclick="check_order()" id="checkout_tickets" >Checkout: 0kr</button>
+           <button class="btn btn-default" type="submit" id="checkout_tickets" >Checkout: 0kr</button>
+           </form>
            </fieldset>
         </div>
       </div>
